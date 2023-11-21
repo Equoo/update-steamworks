@@ -68,8 +68,8 @@ var initOnce internal.Once
 
 func doInit() {
 	internal.RegisterCallback_ValidateAuthTicketResponse(func(data *internal.ValidateAuthTicketResponse, _ bool) {
-		claimedID := steamworks.SteamID(GetUint64(data.SteamID))
-		ownerID := steamworks.SteamID(GetUint64(data.OwnerSteamID))
+		claimedID := steamworks.SteamID(internal.GetUint64(data.SteamID))
+		ownerID := steamworks.SteamID(internal.GetUint64(data.OwnerSteamID))
 		status := SessionStatus(data.EAuthSessionResponse + 2)
 
 		sessionLock.Lock()

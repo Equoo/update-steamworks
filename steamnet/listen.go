@@ -20,7 +20,7 @@ import (
 // accepted if any listener returns true.
 func Listen(accept func(steamworks.SteamID) bool) steamworks.Registration {
 	return internal.RegisterCallback_P2PSessionRequest(func(data *internal.P2PSessionRequest, _ bool) {
-		id := internal.SteamID(GetUint64(data.SteamIDRemote))
+		id := internal.SteamID(internal.GetUint64(data.SteamIDRemote))
 		if accept(steamworks.SteamID(id)) {
 			internal.SteamAPI_ISteamNetworking_AcceptP2PSessionWithUser(id)
 		}

@@ -12,7 +12,7 @@ import (
 // send will retry making the connection (but will be dropped if we fail again).
 func RegisterErrorCallback(f func(steamworks.SteamID, error)) steamworks.Registration {
 	return internal.RegisterCallback_P2PSessionConnectFail(func(data *internal.P2PSessionConnectFail, _ bool) {
-		f(steamworks.SteamID(GetUint64(data.SteamIDRemote)), toError(internal.EP2PSessionError(data.EP2PSessionError)))
+		f(steamworks.SteamID(internal.GetUint64(data.SteamIDRemote)), toError(internal.EP2PSessionError(data.EP2PSessionError)))
 	}, 0)
 }
 
