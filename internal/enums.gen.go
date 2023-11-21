@@ -5,3 +5,2645 @@
 package internal
 
 import "strconv"
+
+func _() {
+	// An "invalid array index" compiler error signifies that the constant values have changed.
+	// Re-run the stringer command to generate them again.
+	var x [1]struct{}
+	_ = x[EUniverse_Invalid-0]
+	_ = x[EUniverse_Public-1]
+	_ = x[EUniverse_Beta-2]
+	_ = x[EUniverse_Internal-3]
+	_ = x[EUniverse_Dev-4]
+	_ = x[EUniverse_Max-5]
+}
+
+const _EUniverse_name = "InvalidPublicBetaInternalDevMax"
+
+var _EUniverse_index = [...]uint8{0, 7, 13, 17, 25, 28, 31}
+
+func (i EUniverse) String() string {
+	if i < 0 || i >= EUniverse(len(_EUniverse_index)-1) {
+		return "EUniverse(" + strconv.FormatInt(int64(i), 10) + ")"
+	}
+	return _EUniverse_name[_EUniverse_index[i]:_EUniverse_index[i+1]]
+}
+
+func _() {
+	// An "invalid array index" compiler error signifies that the constant values have changed.
+	// Re-run the stringer command to generate them again.
+	var x [1]struct{}
+	_ = x[EResult_OK-1]
+	_ = x[EResult_Fail-2]
+	_ = x[EResult_NoConnection-3]
+	_ = x[EResult_InvalidPassword-5]
+	_ = x[EResult_LoggedInElsewhere-6]
+	_ = x[EResult_InvalidProtocolVer-7]
+	_ = x[EResult_InvalidParam-8]
+	_ = x[EResult_FileNotFound-9]
+	_ = x[EResult_Busy-10]
+	_ = x[EResult_InvalidState-11]
+	_ = x[EResult_InvalidName-12]
+	_ = x[EResult_InvalidEmail-13]
+	_ = x[EResult_DuplicateName-14]
+	_ = x[EResult_AccessDenied-15]
+	_ = x[EResult_Timeout-16]
+	_ = x[EResult_Banned-17]
+	_ = x[EResult_AccountNotFound-18]
+	_ = x[EResult_InvalidSteamID-19]
+	_ = x[EResult_ServiceUnavailable-20]
+	_ = x[EResult_NotLoggedOn-21]
+	_ = x[EResult_Pending-22]
+	_ = x[EResult_EncryptionFailure-23]
+	_ = x[EResult_InsufficientPrivilege-24]
+	_ = x[EResult_LimitExceeded-25]
+	_ = x[EResult_Revoked-26]
+	_ = x[EResult_Expired-27]
+	_ = x[EResult_AlreadyRedeemed-28]
+	_ = x[EResult_DuplicateRequest-29]
+	_ = x[EResult_AlreadyOwned-30]
+	_ = x[EResult_IPNotFound-31]
+	_ = x[EResult_PersistFailed-32]
+	_ = x[EResult_LockingFailed-33]
+	_ = x[EResult_LogonSessionReplaced-34]
+	_ = x[EResult_ConnectFailed-35]
+	_ = x[EResult_HandshakeFailed-36]
+	_ = x[EResult_IOFailure-37]
+	_ = x[EResult_RemoteDisconnect-38]
+	_ = x[EResult_ShoppingCartNotFound-39]
+	_ = x[EResult_Blocked-40]
+	_ = x[EResult_Ignored-41]
+	_ = x[EResult_NoMatch-42]
+	_ = x[EResult_AccountDisabled-43]
+	_ = x[EResult_ServiceReadOnly-44]
+	_ = x[EResult_AccountNotFeatured-45]
+	_ = x[EResult_AdministratorOK-46]
+	_ = x[EResult_ContentVersion-47]
+	_ = x[EResult_TryAnotherCM-48]
+	_ = x[EResult_PasswordRequiredToKickSession-49]
+	_ = x[EResult_AlreadyLoggedInElsewhere-50]
+	_ = x[EResult_Suspended-51]
+	_ = x[EResult_Cancelled-52]
+	_ = x[EResult_DataCorruption-53]
+	_ = x[EResult_DiskFull-54]
+	_ = x[EResult_RemoteCallFailed-55]
+	_ = x[EResult_PasswordUnset-56]
+	_ = x[EResult_ExternalAccountUnlinked-57]
+	_ = x[EResult_PSNTicketInvalid-58]
+	_ = x[EResult_ExternalAccountAlreadyLinked-59]
+	_ = x[EResult_RemoteFileConflict-60]
+	_ = x[EResult_IllegalPassword-61]
+	_ = x[EResult_SameAsPreviousValue-62]
+	_ = x[EResult_AccountLogonDenied-63]
+	_ = x[EResult_CannotUseOldPassword-64]
+	_ = x[EResult_InvalidLoginAuthCode-65]
+	_ = x[EResult_AccountLogonDeniedNoMail-66]
+	_ = x[EResult_HardwareNotCapableOfIPT-67]
+	_ = x[EResult_IPTInitError-68]
+	_ = x[EResult_ParentalControlRestricted-69]
+	_ = x[EResult_FacebookQueryError-70]
+	_ = x[EResult_ExpiredLoginAuthCode-71]
+	_ = x[EResult_IPLoginRestrictionFailed-72]
+	_ = x[EResult_AccountLockedDown-73]
+	_ = x[EResult_AccountLogonDeniedVerifiedEmailRequired-74]
+	_ = x[EResult_NoMatchingURL-75]
+	_ = x[EResult_BadResponse-76]
+	_ = x[EResult_RequirePasswordReEntry-77]
+	_ = x[EResult_ValueOutOfRange-78]
+	_ = x[EResult_UnexpectedError-79]
+	_ = x[EResult_Disabled-80]
+	_ = x[EResult_InvalidCEGSubmission-81]
+	_ = x[EResult_RestrictedDevice-82]
+	_ = x[EResult_RegionLocked-83]
+	_ = x[EResult_RateLimitExceeded-84]
+	_ = x[EResult_AccountLoginDeniedNeedTwoFactor-85]
+	_ = x[EResult_ItemDeleted-86]
+	_ = x[EResult_AccountLoginDeniedThrottle-87]
+	_ = x[EResult_TwoFactorCodeMismatch-88]
+	_ = x[EResult_TwoFactorActivationCodeMismatch-89]
+	_ = x[EResult_AccountAssociatedToMultiplePartners-90]
+	_ = x[EResult_NotModified-91]
+	_ = x[EResult_NoMobileDevice-92]
+	_ = x[EResult_TimeNotSynced-93]
+	_ = x[EResult_SmsCodeFailed-94]
+	_ = x[EResult_AccountLimitExceeded-95]
+	_ = x[EResult_AccountActivityLimitExceeded-96]
+	_ = x[EResult_PhoneActivityLimitExceeded-97]
+	_ = x[EResult_RefundToWallet-98]
+	_ = x[EResult_EmailSendFailure-99]
+	_ = x[EResult_NotSettled-100]
+	_ = x[EResult_NeedCaptcha-101]
+	_ = x[EResult_GSLTDenied-102]
+	_ = x[EResult_GSOwnerDenied-103]
+	_ = x[EResult_InvalidItemType-104]
+	_ = x[EResult_IPBanned-105]
+	_ = x[EResult_GSLTExpired-106]
+	_ = x[EResult_InsufficientFunds-107]
+	_ = x[EResult_TooManyPending-108]
+	_ = x[EResult_NoSiteLicensesFound-109]
+	_ = x[EResult_WGNetworkSendExceeded-110]
+	_ = x[EResult_AccountNotFriends-111]
+	_ = x[EResult_LimitedUserAccount-112]
+}
+
+const (
+	_EResult_name_0 = "OKFailNoConnection"
+	_EResult_name_1 = "InvalidPasswordLoggedInElsewhereInvalidProtocolVerInvalidParamFileNotFoundBusyInvalidStateInvalidNameInvalidEmailDuplicateNameAccessDeniedTimeoutBannedAccountNotFoundInvalidSteamIDServiceUnavailableNotLoggedOnPendingEncryptionFailureInsufficientPrivilegeLimitExceededRevokedExpiredAlreadyRedeemedDuplicateRequestAlreadyOwnedIPNotFoundPersistFailedLockingFailedLogonSessionReplacedConnectFailedHandshakeFailedIOFailureRemoteDisconnectShoppingCartNotFoundBlockedIgnoredNoMatchAccountDisabledServiceReadOnlyAccountNotFeaturedAdministratorOKContentVersionTryAnotherCMPasswordRequiredToKickSessionAlreadyLoggedInElsewhereSuspendedCancelledDataCorruptionDiskFullRemoteCallFailedPasswordUnsetExternalAccountUnlinkedPSNTicketInvalidExternalAccountAlreadyLinkedRemoteFileConflictIllegalPasswordSameAsPreviousValueAccountLogonDeniedCannotUseOldPasswordInvalidLoginAuthCodeAccountLogonDeniedNoMailHardwareNotCapableOfIPTIPTInitErrorParentalControlRestrictedFacebookQueryErrorExpiredLoginAuthCodeIPLoginRestrictionFailedAccountLockedDownAccountLogonDeniedVerifiedEmailRequiredNoMatchingURLBadResponseRequirePasswordReEntryValueOutOfRangeUnexpectedErrorDisabledInvalidCEGSubmissionRestrictedDeviceRegionLockedRateLimitExceededAccountLoginDeniedNeedTwoFactorItemDeletedAccountLoginDeniedThrottleTwoFactorCodeMismatchTwoFactorActivationCodeMismatchAccountAssociatedToMultiplePartnersNotModifiedNoMobileDeviceTimeNotSyncedSmsCodeFailedAccountLimitExceededAccountActivityLimitExceededPhoneActivityLimitExceededRefundToWalletEmailSendFailureNotSettledNeedCaptchaGSLTDeniedGSOwnerDeniedInvalidItemTypeIPBannedGSLTExpiredInsufficientFundsTooManyPendingNoSiteLicensesFoundWGNetworkSendExceededAccountNotFriendsLimitedUserAccount"
+)
+
+var (
+	_EResult_index_0 = [...]uint8{0, 2, 6, 18}
+	_EResult_index_1 = [...]uint16{0, 15, 32, 50, 62, 74, 78, 90, 101, 113, 126, 138, 145, 151, 166, 180, 198, 209, 216, 233, 254, 267, 274, 281, 296, 312, 324, 334, 347, 360, 380, 393, 408, 417, 433, 453, 460, 467, 474, 489, 504, 522, 537, 551, 563, 592, 616, 625, 634, 648, 656, 672, 685, 708, 724, 752, 770, 785, 804, 822, 842, 862, 886, 909, 921, 946, 964, 984, 1008, 1025, 1064, 1077, 1088, 1110, 1125, 1140, 1148, 1168, 1184, 1196, 1213, 1244, 1255, 1281, 1302, 1333, 1368, 1379, 1393, 1406, 1419, 1439, 1467, 1493, 1507, 1523, 1533, 1544, 1554, 1567, 1582, 1590, 1601, 1618, 1632, 1651, 1672, 1689, 1707}
+)
+
+func (i EResult) String() string {
+	switch {
+	case 1 <= i && i <= 3:
+		i -= 1
+		return _EResult_name_0[_EResult_index_0[i]:_EResult_index_0[i+1]]
+	case 5 <= i && i <= 112:
+		i -= 5
+		return _EResult_name_1[_EResult_index_1[i]:_EResult_index_1[i+1]]
+	default:
+		return "EResult(" + strconv.FormatInt(int64(i), 10) + ")"
+	}
+}
+
+func _() {
+	// An "invalid array index" compiler error signifies that the constant values have changed.
+	// Re-run the stringer command to generate them again.
+	var x [1]struct{}
+	_ = x[EVoiceResult_OK-0]
+	_ = x[EVoiceResult_NotInitialized-1]
+	_ = x[EVoiceResult_NotRecording-2]
+	_ = x[EVoiceResult_NoData-3]
+	_ = x[EVoiceResult_BufferTooSmall-4]
+	_ = x[EVoiceResult_DataCorrupted-5]
+	_ = x[EVoiceResult_Restricted-6]
+	_ = x[EVoiceResult_UnsupportedCodec-7]
+	_ = x[EVoiceResult_ReceiverOutOfDate-8]
+	_ = x[EVoiceResult_ReceiverDidNotAnswer-9]
+}
+
+const _EVoiceResult_name = "OKNotInitializedNotRecordingNoDataBufferTooSmallDataCorruptedRestrictedUnsupportedCodecReceiverOutOfDateReceiverDidNotAnswer"
+
+var _EVoiceResult_index = [...]uint8{0, 2, 16, 28, 34, 48, 61, 71, 87, 104, 124}
+
+func (i EVoiceResult) String() string {
+	if i < 0 || i >= EVoiceResult(len(_EVoiceResult_index)-1) {
+		return "EVoiceResult(" + strconv.FormatInt(int64(i), 10) + ")"
+	}
+	return _EVoiceResult_name[_EVoiceResult_index[i]:_EVoiceResult_index[i+1]]
+}
+
+func _() {
+	// An "invalid array index" compiler error signifies that the constant values have changed.
+	// Re-run the stringer command to generate them again.
+	var x [1]struct{}
+	_ = x[EDenyReason_EDenyInvalid-0]
+	_ = x[EDenyReason_EDenyInvalidVersion-1]
+	_ = x[EDenyReason_EDenyGeneric-2]
+	_ = x[EDenyReason_EDenyNotLoggedOn-3]
+	_ = x[EDenyReason_EDenyNoLicense-4]
+	_ = x[EDenyReason_EDenyCheater-5]
+	_ = x[EDenyReason_EDenyLoggedInElseWhere-6]
+	_ = x[EDenyReason_EDenyUnknownText-7]
+	_ = x[EDenyReason_EDenyIncompatibleAnticheat-8]
+	_ = x[EDenyReason_EDenyMemoryCorruption-9]
+	_ = x[EDenyReason_EDenyIncompatibleSoftware-10]
+	_ = x[EDenyReason_EDenySteamConnectionLost-11]
+	_ = x[EDenyReason_EDenySteamConnectionError-12]
+	_ = x[EDenyReason_EDenySteamResponseTimedOut-13]
+	_ = x[EDenyReason_EDenySteamValidationStalled-14]
+	_ = x[EDenyReason_EDenySteamOwnerLeftGuestUser-15]
+}
+
+const _EDenyReason_name = "EDenyInvalidEDenyInvalidVersionEDenyGenericEDenyNotLoggedOnEDenyNoLicenseEDenyCheaterEDenyLoggedInElseWhereEDenyUnknownTextEDenyIncompatibleAnticheatEDenyMemoryCorruptionEDenyIncompatibleSoftwareEDenySteamConnectionLostEDenySteamConnectionErrorEDenySteamResponseTimedOutEDenySteamValidationStalledEDenySteamOwnerLeftGuestUser"
+
+var _EDenyReason_index = [...]uint16{0, 12, 31, 43, 59, 73, 85, 107, 123, 149, 170, 195, 219, 244, 270, 297, 325}
+
+func (i EDenyReason) String() string {
+	if i < 0 || i >= EDenyReason(len(_EDenyReason_index)-1) {
+		return "EDenyReason(" + strconv.FormatInt(int64(i), 10) + ")"
+	}
+	return _EDenyReason_name[_EDenyReason_index[i]:_EDenyReason_index[i+1]]
+}
+
+func _() {
+	// An "invalid array index" compiler error signifies that the constant values have changed.
+	// Re-run the stringer command to generate them again.
+	var x [1]struct{}
+	_ = x[EBeginAuthSessionResult_OK-0]
+	_ = x[EBeginAuthSessionResult_InvalidTicket-1]
+	_ = x[EBeginAuthSessionResult_DuplicateRequest-2]
+	_ = x[EBeginAuthSessionResult_InvalidVersion-3]
+	_ = x[EBeginAuthSessionResult_GameMismatch-4]
+	_ = x[EBeginAuthSessionResult_ExpiredTicket-5]
+}
+
+const _EBeginAuthSessionResult_name = "OKInvalidTicketDuplicateRequestInvalidVersionGameMismatchExpiredTicket"
+
+var _EBeginAuthSessionResult_index = [...]uint8{0, 2, 15, 31, 45, 57, 70}
+
+func (i EBeginAuthSessionResult) String() string {
+	if i < 0 || i >= EBeginAuthSessionResult(len(_EBeginAuthSessionResult_index)-1) {
+		return "EBeginAuthSessionResult(" + strconv.FormatInt(int64(i), 10) + ")"
+	}
+	return _EBeginAuthSessionResult_name[_EBeginAuthSessionResult_index[i]:_EBeginAuthSessionResult_index[i+1]]
+}
+
+func _() {
+	// An "invalid array index" compiler error signifies that the constant values have changed.
+	// Re-run the stringer command to generate them again.
+	var x [1]struct{}
+	_ = x[EAuthSessionResponse_OK-0]
+	_ = x[EAuthSessionResponse_UserNotConnectedToSteam-1]
+	_ = x[EAuthSessionResponse_NoLicenseOrExpired-2]
+	_ = x[EAuthSessionResponse_VACBanned-3]
+	_ = x[EAuthSessionResponse_LoggedInElseWhere-4]
+	_ = x[EAuthSessionResponse_VACCheckTimedOut-5]
+	_ = x[EAuthSessionResponse_AuthTicketCanceled-6]
+	_ = x[EAuthSessionResponse_AuthTicketInvalidAlreadyUsed-7]
+	_ = x[EAuthSessionResponse_AuthTicketInvalid-8]
+	_ = x[EAuthSessionResponse_PublisherIssuedBan-9]
+}
+
+const _EAuthSessionResponse_name = "OKUserNotConnectedToSteamNoLicenseOrExpiredVACBannedLoggedInElseWhereVACCheckTimedOutAuthTicketCanceledAuthTicketInvalidAlreadyUsedAuthTicketInvalidPublisherIssuedBan"
+
+var _EAuthSessionResponse_index = [...]uint8{0, 2, 25, 43, 52, 69, 85, 103, 131, 148, 166}
+
+func (i EAuthSessionResponse) String() string {
+	if i < 0 || i >= EAuthSessionResponse(len(_EAuthSessionResponse_index)-1) {
+		return "EAuthSessionResponse(" + strconv.FormatInt(int64(i), 10) + ")"
+	}
+	return _EAuthSessionResponse_name[_EAuthSessionResponse_index[i]:_EAuthSessionResponse_index[i+1]]
+}
+
+func _() {
+	// An "invalid array index" compiler error signifies that the constant values have changed.
+	// Re-run the stringer command to generate them again.
+	var x [1]struct{}
+	_ = x[EUserHasLicenseForAppResult_EUserHasLicenseResultHasLicense-0]
+	_ = x[EUserHasLicenseForAppResult_EUserHasLicenseResultDoesNotHaveLicense-1]
+	_ = x[EUserHasLicenseForAppResult_EUserHasLicenseResultNoAuth-2]
+}
+
+const _EUserHasLicenseForAppResult_name = "EUserHasLicenseResultHasLicenseEUserHasLicenseResultDoesNotHaveLicenseEUserHasLicenseResultNoAuth"
+
+var _EUserHasLicenseForAppResult_index = [...]uint8{0, 31, 70, 97}
+
+func (i EUserHasLicenseForAppResult) String() string {
+	if i < 0 || i >= EUserHasLicenseForAppResult(len(_EUserHasLicenseForAppResult_index)-1) {
+		return "EUserHasLicenseForAppResult(" + strconv.FormatInt(int64(i), 10) + ")"
+	}
+	return _EUserHasLicenseForAppResult_name[_EUserHasLicenseForAppResult_index[i]:_EUserHasLicenseForAppResult_index[i+1]]
+}
+
+func _() {
+	// An "invalid array index" compiler error signifies that the constant values have changed.
+	// Re-run the stringer command to generate them again.
+	var x [1]struct{}
+	_ = x[EAccountType_Invalid-0]
+	_ = x[EAccountType_Individual-1]
+	_ = x[EAccountType_Multiseat-2]
+	_ = x[EAccountType_GameServer-3]
+	_ = x[EAccountType_AnonGameServer-4]
+	_ = x[EAccountType_Pending-5]
+	_ = x[EAccountType_ContentServer-6]
+	_ = x[EAccountType_Clan-7]
+	_ = x[EAccountType_Chat-8]
+	_ = x[EAccountType_ConsoleUser-9]
+	_ = x[EAccountType_AnonUser-10]
+	_ = x[EAccountType_Max-11]
+}
+
+const _EAccountType_name = "InvalidIndividualMultiseatGameServerAnonGameServerPendingContentServerClanChatConsoleUserAnonUserMax"
+
+var _EAccountType_index = [...]uint8{0, 7, 17, 26, 36, 50, 57, 70, 74, 78, 89, 97, 100}
+
+func (i EAccountType) String() string {
+	if i < 0 || i >= EAccountType(len(_EAccountType_index)-1) {
+		return "EAccountType(" + strconv.FormatInt(int64(i), 10) + ")"
+	}
+	return _EAccountType_name[_EAccountType_index[i]:_EAccountType_index[i+1]]
+}
+
+func _() {
+	// An "invalid array index" compiler error signifies that the constant values have changed.
+	// Re-run the stringer command to generate them again.
+	var x [1]struct{}
+	_ = x[EAppReleaseState_Unknown-0]
+	_ = x[EAppReleaseState_Unavailable-1]
+	_ = x[EAppReleaseState_Prerelease-2]
+	_ = x[EAppReleaseState_PreloadOnly-3]
+	_ = x[EAppReleaseState_Released-4]
+}
+
+const _EAppReleaseState_name = "UnknownUnavailablePrereleasePreloadOnlyReleased"
+
+var _EAppReleaseState_index = [...]uint8{0, 7, 18, 28, 39, 47}
+
+func (i EAppReleaseState) String() string {
+	if i < 0 || i >= EAppReleaseState(len(_EAppReleaseState_index)-1) {
+		return "EAppReleaseState(" + strconv.FormatInt(int64(i), 10) + ")"
+	}
+	return _EAppReleaseState_name[_EAppReleaseState_index[i]:_EAppReleaseState_index[i+1]]
+}
+
+func _() {
+	// An "invalid array index" compiler error signifies that the constant values have changed.
+	// Re-run the stringer command to generate them again.
+	var x [1]struct{}
+	_ = x[EAppOwnershipFlags_None-0]
+	_ = x[EAppOwnershipFlags_OwnsLicense-1]
+	_ = x[EAppOwnershipFlags_FreeLicense-2]
+	_ = x[EAppOwnershipFlags_RegionRestricted-4]
+	_ = x[EAppOwnershipFlags_LowViolence-8]
+	_ = x[EAppOwnershipFlags_InvalidPlatform-16]
+	_ = x[EAppOwnershipFlags_SharedLicense-32]
+	_ = x[EAppOwnershipFlags_FreeWeekend-64]
+	_ = x[EAppOwnershipFlags_RetailLicense-128]
+	_ = x[EAppOwnershipFlags_LicenseLocked-256]
+	_ = x[EAppOwnershipFlags_LicensePending-512]
+	_ = x[EAppOwnershipFlags_LicenseExpired-1024]
+	_ = x[EAppOwnershipFlags_LicensePermanent-2048]
+	_ = x[EAppOwnershipFlags_LicenseRecurring-4096]
+	_ = x[EAppOwnershipFlags_LicenseCanceled-8192]
+	_ = x[EAppOwnershipFlags_AutoGrant-16384]
+	_ = x[EAppOwnershipFlags_PendingGift-32768]
+	_ = x[EAppOwnershipFlags_RentalNotActivated-65536]
+	_ = x[EAppOwnershipFlags_Rental-131072]
+	_ = x[EAppOwnershipFlags_SiteLicense-262144]
+}
+
+const _EAppOwnershipFlags_name = "NoneOwnsLicenseFreeLicenseRegionRestrictedLowViolenceInvalidPlatformSharedLicenseFreeWeekendRetailLicenseLicenseLockedLicensePendingLicenseExpiredLicensePermanentLicenseRecurringLicenseCanceledAutoGrantPendingGiftRentalNotActivatedRentalSiteLicense"
+
+var _EAppOwnershipFlags_map = map[EAppOwnershipFlags]string{
+	0:      _EAppOwnershipFlags_name[0:4],
+	1:      _EAppOwnershipFlags_name[4:15],
+	2:      _EAppOwnershipFlags_name[15:26],
+	4:      _EAppOwnershipFlags_name[26:42],
+	8:      _EAppOwnershipFlags_name[42:53],
+	16:     _EAppOwnershipFlags_name[53:68],
+	32:     _EAppOwnershipFlags_name[68:81],
+	64:     _EAppOwnershipFlags_name[81:92],
+	128:    _EAppOwnershipFlags_name[92:105],
+	256:    _EAppOwnershipFlags_name[105:118],
+	512:    _EAppOwnershipFlags_name[118:132],
+	1024:   _EAppOwnershipFlags_name[132:146],
+	2048:   _EAppOwnershipFlags_name[146:162],
+	4096:   _EAppOwnershipFlags_name[162:178],
+	8192:   _EAppOwnershipFlags_name[178:193],
+	16384:  _EAppOwnershipFlags_name[193:202],
+	32768:  _EAppOwnershipFlags_name[202:213],
+	65536:  _EAppOwnershipFlags_name[213:231],
+	131072: _EAppOwnershipFlags_name[231:237],
+	262144: _EAppOwnershipFlags_name[237:248],
+}
+
+func (i EAppOwnershipFlags) String() string {
+	if str, ok := _EAppOwnershipFlags_map[i]; ok {
+		return str
+	}
+	return "EAppOwnershipFlags(" + strconv.FormatInt(int64(i), 10) + ")"
+}
+
+func _() {
+	// An "invalid array index" compiler error signifies that the constant values have changed.
+	// Re-run the stringer command to generate them again.
+	var x [1]struct{}
+	_ = x[EAppType_Invalid-0]
+	_ = x[EAppType_Game-1]
+	_ = x[EAppType_Application-2]
+	_ = x[EAppType_Tool-4]
+	_ = x[EAppType_Demo-8]
+	_ = x[EAppType_Media_DEPRECATED-16]
+	_ = x[EAppType_DLC-32]
+	_ = x[EAppType_Guide-64]
+	_ = x[EAppType_Driver-128]
+	_ = x[EAppType_Config-256]
+	_ = x[EAppType_Hardware-512]
+	_ = x[EAppType_Franchise-1024]
+	_ = x[EAppType_Video-2048]
+	_ = x[EAppType_Plugin-4096]
+	_ = x[EAppType_Music-8192]
+	_ = x[EAppType_Series-16384]
+	_ = x[EAppType_Comic-32768]
+	_ = x[EAppType_Shortcut-1073741824]
+	_ = x[EAppType_DepotOnly - -2147483648]
+}
+
+const _EAppType_name = "DepotOnlyInvalidGameApplicationToolDemoMedia_DEPRECATEDDLCGuideDriverConfigHardwareFranchiseVideoPluginMusicSeriesComicShortcut"
+
+var _EAppType_map = map[EAppType]string{
+	-2147483648: _EAppType_name[0:9],
+	0:           _EAppType_name[9:16],
+	1:           _EAppType_name[16:20],
+	2:           _EAppType_name[20:31],
+	4:           _EAppType_name[31:35],
+	8:           _EAppType_name[35:39],
+	16:          _EAppType_name[39:55],
+	32:          _EAppType_name[55:58],
+	64:          _EAppType_name[58:63],
+	128:         _EAppType_name[63:69],
+	256:         _EAppType_name[69:75],
+	512:         _EAppType_name[75:83],
+	1024:        _EAppType_name[83:92],
+	2048:        _EAppType_name[92:97],
+	4096:        _EAppType_name[97:103],
+	8192:        _EAppType_name[103:108],
+	16384:       _EAppType_name[108:114],
+	32768:       _EAppType_name[114:119],
+	1073741824:  _EAppType_name[119:127],
+}
+
+func (i EAppType) String() string {
+	if str, ok := _EAppType_map[i]; ok {
+		return str
+	}
+	return "EAppType(" + strconv.FormatInt(int64(i), 10) + ")"
+}
+
+func _() {
+	// An "invalid array index" compiler error signifies that the constant values have changed.
+	// Re-run the stringer command to generate them again.
+	var x [1]struct{}
+	_ = x[ESteamUserStatType_INVALID-0]
+	_ = x[ESteamUserStatType_INT-1]
+	_ = x[ESteamUserStatType_FLOAT-2]
+	_ = x[ESteamUserStatType_AVGRATE-3]
+	_ = x[ESteamUserStatType_ACHIEVEMENTS-4]
+	_ = x[ESteamUserStatType_GROUPACHIEVEMENTS-5]
+	_ = x[ESteamUserStatType_MAX-6]
+}
+
+const _ESteamUserStatType_name = "INVALIDINTFLOATAVGRATEACHIEVEMENTSGROUPACHIEVEMENTSMAX"
+
+var _ESteamUserStatType_index = [...]uint8{0, 7, 10, 15, 22, 34, 51, 54}
+
+func (i ESteamUserStatType) String() string {
+	if i < 0 || i >= ESteamUserStatType(len(_ESteamUserStatType_index)-1) {
+		return "ESteamUserStatType(" + strconv.FormatInt(int64(i), 10) + ")"
+	}
+	return _ESteamUserStatType_name[_ESteamUserStatType_index[i]:_ESteamUserStatType_index[i+1]]
+}
+
+func _() {
+	// An "invalid array index" compiler error signifies that the constant values have changed.
+	// Re-run the stringer command to generate them again.
+	var x [1]struct{}
+	_ = x[EChatEntryType_Invalid-0]
+	_ = x[EChatEntryType_ChatMsg-1]
+	_ = x[EChatEntryType_Typing-2]
+	_ = x[EChatEntryType_InviteGame-3]
+	_ = x[EChatEntryType_Emote-4]
+	_ = x[EChatEntryType_LeftConversation-6]
+	_ = x[EChatEntryType_Entered-7]
+	_ = x[EChatEntryType_WasKicked-8]
+	_ = x[EChatEntryType_WasBanned-9]
+	_ = x[EChatEntryType_Disconnected-10]
+	_ = x[EChatEntryType_HistoricalChat-11]
+	_ = x[EChatEntryType_LinkBlocked-14]
+}
+
+const (
+	_EChatEntryType_name_0 = "InvalidChatMsgTypingInviteGameEmote"
+	_EChatEntryType_name_1 = "LeftConversationEnteredWasKickedWasBannedDisconnectedHistoricalChat"
+	_EChatEntryType_name_2 = "LinkBlocked"
+)
+
+var (
+	_EChatEntryType_index_0 = [...]uint8{0, 7, 14, 20, 30, 35}
+	_EChatEntryType_index_1 = [...]uint8{0, 16, 23, 32, 41, 53, 67}
+)
+
+func (i EChatEntryType) String() string {
+	switch {
+	case 0 <= i && i <= 4:
+		return _EChatEntryType_name_0[_EChatEntryType_index_0[i]:_EChatEntryType_index_0[i+1]]
+	case 6 <= i && i <= 11:
+		i -= 6
+		return _EChatEntryType_name_1[_EChatEntryType_index_1[i]:_EChatEntryType_index_1[i+1]]
+	case i == 14:
+		return _EChatEntryType_name_2
+	default:
+		return "EChatEntryType(" + strconv.FormatInt(int64(i), 10) + ")"
+	}
+}
+
+func _() {
+	// An "invalid array index" compiler error signifies that the constant values have changed.
+	// Re-run the stringer command to generate them again.
+	var x [1]struct{}
+	_ = x[EChatRoomEnterResponse_Success-1]
+	_ = x[EChatRoomEnterResponse_DoesntExist-2]
+	_ = x[EChatRoomEnterResponse_NotAllowed-3]
+	_ = x[EChatRoomEnterResponse_Full-4]
+	_ = x[EChatRoomEnterResponse_Error-5]
+	_ = x[EChatRoomEnterResponse_Banned-6]
+	_ = x[EChatRoomEnterResponse_Limited-7]
+	_ = x[EChatRoomEnterResponse_ClanDisabled-8]
+	_ = x[EChatRoomEnterResponse_CommunityBan-9]
+	_ = x[EChatRoomEnterResponse_MemberBlockedYou-10]
+	_ = x[EChatRoomEnterResponse_YouBlockedMember-11]
+	_ = x[EChatRoomEnterResponse_RatelimitExceeded-15]
+}
+
+const (
+	_EChatRoomEnterResponse_name_0 = "SuccessDoesntExistNotAllowedFullErrorBannedLimitedClanDisabledCommunityBanMemberBlockedYouYouBlockedMember"
+	_EChatRoomEnterResponse_name_1 = "RatelimitExceeded"
+)
+
+var (
+	_EChatRoomEnterResponse_index_0 = [...]uint8{0, 7, 18, 28, 32, 37, 43, 50, 62, 74, 90, 106}
+)
+
+func (i EChatRoomEnterResponse) String() string {
+	switch {
+	case 1 <= i && i <= 11:
+		i -= 1
+		return _EChatRoomEnterResponse_name_0[_EChatRoomEnterResponse_index_0[i]:_EChatRoomEnterResponse_index_0[i+1]]
+	case i == 15:
+		return _EChatRoomEnterResponse_name_1
+	default:
+		return "EChatRoomEnterResponse(" + strconv.FormatInt(int64(i), 10) + ")"
+	}
+}
+
+func _() {
+	// An "invalid array index" compiler error signifies that the constant values have changed.
+	// Re-run the stringer command to generate them again.
+	var x [1]struct{}
+	_ = x[EChatSteamIDInstanceFlags_EChatAccountInstanceMask-4095]
+	_ = x[EChatSteamIDInstanceFlags_EChatInstanceFlagClan-524288]
+	_ = x[EChatSteamIDInstanceFlags_EChatInstanceFlagLobby-262144]
+	_ = x[EChatSteamIDInstanceFlags_EChatInstanceFlagMMSLobby-131072]
+}
+
+const (
+	_EChatSteamIDInstanceFlags_name_0 = "EChatAccountInstanceMask"
+	_EChatSteamIDInstanceFlags_name_1 = "EChatInstanceFlagMMSLobby"
+	_EChatSteamIDInstanceFlags_name_2 = "EChatInstanceFlagLobby"
+	_EChatSteamIDInstanceFlags_name_3 = "EChatInstanceFlagClan"
+)
+
+func (i EChatSteamIDInstanceFlags) String() string {
+	switch {
+	case i == 4095:
+		return _EChatSteamIDInstanceFlags_name_0
+	case i == 131072:
+		return _EChatSteamIDInstanceFlags_name_1
+	case i == 262144:
+		return _EChatSteamIDInstanceFlags_name_2
+	case i == 524288:
+		return _EChatSteamIDInstanceFlags_name_3
+	default:
+		return "EChatSteamIDInstanceFlags(" + strconv.FormatInt(int64(i), 10) + ")"
+	}
+}
+
+func _() {
+	// An "invalid array index" compiler error signifies that the constant values have changed.
+	// Re-run the stringer command to generate them again.
+	var x [1]struct{}
+	_ = x[EMarketingMessageFlags_None-0]
+	_ = x[EMarketingMessageFlags_HighPriority-1]
+	_ = x[EMarketingMessageFlags_PlatformWindows-2]
+	_ = x[EMarketingMessageFlags_PlatformMac-4]
+	_ = x[EMarketingMessageFlags_PlatformLinux-8]
+	_ = x[EMarketingMessageFlags_PlatformRestrictions-14]
+}
+
+const (
+	_EMarketingMessageFlags_name_0 = "NoneHighPriorityPlatformWindows"
+	_EMarketingMessageFlags_name_1 = "PlatformMac"
+	_EMarketingMessageFlags_name_2 = "PlatformLinux"
+	_EMarketingMessageFlags_name_3 = "PlatformRestrictions"
+)
+
+var (
+	_EMarketingMessageFlags_index_0 = [...]uint8{0, 4, 16, 31}
+)
+
+func (i EMarketingMessageFlags) String() string {
+	switch {
+	case 0 <= i && i <= 2:
+		return _EMarketingMessageFlags_name_0[_EMarketingMessageFlags_index_0[i]:_EMarketingMessageFlags_index_0[i+1]]
+	case i == 4:
+		return _EMarketingMessageFlags_name_1
+	case i == 8:
+		return _EMarketingMessageFlags_name_2
+	case i == 14:
+		return _EMarketingMessageFlags_name_3
+	default:
+		return "EMarketingMessageFlags(" + strconv.FormatInt(int64(i), 10) + ")"
+	}
+}
+
+func _() {
+	// An "invalid array index" compiler error signifies that the constant values have changed.
+	// Re-run the stringer command to generate them again.
+	var x [1]struct{}
+	_ = x[ENotificationPosition_EPositionTopLeft-0]
+	_ = x[ENotificationPosition_EPositionTopRight-1]
+	_ = x[ENotificationPosition_EPositionBottomLeft-2]
+	_ = x[ENotificationPosition_EPositionBottomRight-3]
+}
+
+const _ENotificationPosition_name = "EPositionTopLeftEPositionTopRightEPositionBottomLeftEPositionBottomRight"
+
+var _ENotificationPosition_index = [...]uint8{0, 16, 33, 52, 72}
+
+func (i ENotificationPosition) String() string {
+	if i < 0 || i >= ENotificationPosition(len(_ENotificationPosition_index)-1) {
+		return "ENotificationPosition(" + strconv.FormatInt(int64(i), 10) + ")"
+	}
+	return _ENotificationPosition_name[_ENotificationPosition_index[i]:_ENotificationPosition_index[i+1]]
+}
+
+func _() {
+	// An "invalid array index" compiler error signifies that the constant values have changed.
+	// Re-run the stringer command to generate them again.
+	var x [1]struct{}
+	_ = x[EBroadcastUploadResult_None-0]
+	_ = x[EBroadcastUploadResult_OK-1]
+	_ = x[EBroadcastUploadResult_InitFailed-2]
+	_ = x[EBroadcastUploadResult_FrameFailed-3]
+	_ = x[EBroadcastUploadResult_Timeout-4]
+	_ = x[EBroadcastUploadResult_BandwidthExceeded-5]
+	_ = x[EBroadcastUploadResult_LowFPS-6]
+	_ = x[EBroadcastUploadResult_MissingKeyFrames-7]
+	_ = x[EBroadcastUploadResult_NoConnection-8]
+	_ = x[EBroadcastUploadResult_RelayFailed-9]
+	_ = x[EBroadcastUploadResult_SettingsChanged-10]
+	_ = x[EBroadcastUploadResult_MissingAudio-11]
+	_ = x[EBroadcastUploadResult_TooFarBehind-12]
+	_ = x[EBroadcastUploadResult_TranscodeBehind-13]
+}
+
+const _EBroadcastUploadResult_name = "NoneOKInitFailedFrameFailedTimeoutBandwidthExceededLowFPSMissingKeyFramesNoConnectionRelayFailedSettingsChangedMissingAudioTooFarBehindTranscodeBehind"
+
+var _EBroadcastUploadResult_index = [...]uint8{0, 4, 6, 16, 27, 34, 51, 57, 73, 85, 96, 111, 123, 135, 150}
+
+func (i EBroadcastUploadResult) String() string {
+	if i < 0 || i >= EBroadcastUploadResult(len(_EBroadcastUploadResult_index)-1) {
+		return "EBroadcastUploadResult(" + strconv.FormatInt(int64(i), 10) + ")"
+	}
+	return _EBroadcastUploadResult_name[_EBroadcastUploadResult_index[i]:_EBroadcastUploadResult_index[i+1]]
+}
+
+func _() {
+	// An "invalid array index" compiler error signifies that the constant values have changed.
+	// Re-run the stringer command to generate them again.
+	var x [1]struct{}
+	_ = x[ELaunchOptionType_None-0]
+	_ = x[ELaunchOptionType_Default-1]
+	_ = x[ELaunchOptionType_SafeMode-2]
+	_ = x[ELaunchOptionType_Multiplayer-3]
+	_ = x[ELaunchOptionType_Config-4]
+	_ = x[ELaunchOptionType_OpenVR-5]
+	_ = x[ELaunchOptionType_Server-6]
+	_ = x[ELaunchOptionType_Editor-7]
+	_ = x[ELaunchOptionType_Manual-8]
+	_ = x[ELaunchOptionType_Benchmark-9]
+	_ = x[ELaunchOptionType_Option1-10]
+	_ = x[ELaunchOptionType_Option2-11]
+	_ = x[ELaunchOptionType_Option3-12]
+	_ = x[ELaunchOptionType_OculusVR-13]
+	_ = x[ELaunchOptionType_OpenVROverlay-14]
+	_ = x[ELaunchOptionType_OSVR-15]
+	_ = x[ELaunchOptionType_Dialog-1000]
+}
+
+const (
+	_ELaunchOptionType_name_0 = "NoneDefaultSafeModeMultiplayerConfigOpenVRServerEditorManualBenchmarkOption1Option2Option3OculusVROpenVROverlayOSVR"
+	_ELaunchOptionType_name_1 = "Dialog"
+)
+
+var (
+	_ELaunchOptionType_index_0 = [...]uint8{0, 4, 11, 19, 30, 36, 42, 48, 54, 60, 69, 76, 83, 90, 98, 111, 115}
+)
+
+func (i ELaunchOptionType) String() string {
+	switch {
+	case 0 <= i && i <= 15:
+		return _ELaunchOptionType_name_0[_ELaunchOptionType_index_0[i]:_ELaunchOptionType_index_0[i+1]]
+	case i == 1000:
+		return _ELaunchOptionType_name_1
+	default:
+		return "ELaunchOptionType(" + strconv.FormatInt(int64(i), 10) + ")"
+	}
+}
+
+func _() {
+	// An "invalid array index" compiler error signifies that the constant values have changed.
+	// Re-run the stringer command to generate them again.
+	var x [1]struct{}
+	_ = x[EVRHMDType_None - -1]
+	_ = x[EVRHMDType_Unknown-0]
+	_ = x[EVRHMDType_HTC_Dev-1]
+	_ = x[EVRHMDType_HTC_VivePre-2]
+	_ = x[EVRHMDType_HTC_Vive-3]
+	_ = x[EVRHMDType_HTC_Unknown-20]
+	_ = x[EVRHMDType_Oculus_DK1-21]
+	_ = x[EVRHMDType_Oculus_DK2-22]
+	_ = x[EVRHMDType_Oculus_Rift-23]
+	_ = x[EVRHMDType_Oculus_Unknown-40]
+	_ = x[EVRHMDType_Acer_Unknown-50]
+	_ = x[EVRHMDType_Acer_WindowsMR-51]
+	_ = x[EVRHMDType_Dell_Unknown-60]
+	_ = x[EVRHMDType_Dell_Visor-61]
+	_ = x[EVRHMDType_Lenovo_Unknown-70]
+	_ = x[EVRHMDType_Lenovo_Explorer-71]
+	_ = x[EVRHMDType_HP_Unknown-80]
+	_ = x[EVRHMDType_HP_WindowsMR-81]
+	_ = x[EVRHMDType_Samsung_Unknown-90]
+	_ = x[EVRHMDType_Samsung_Odyssey-91]
+	_ = x[EVRHMDType_Unannounced_Unknown-100]
+	_ = x[EVRHMDType_Unannounced_WindowsMR-101]
+}
+
+const (
+	_EVRHMDType_name_0 = "NoneUnknownHTC_DevHTC_VivePreHTC_Vive"
+	_EVRHMDType_name_1 = "HTC_UnknownOculus_DK1Oculus_DK2Oculus_Rift"
+	_EVRHMDType_name_2 = "Oculus_Unknown"
+	_EVRHMDType_name_3 = "Acer_UnknownAcer_WindowsMR"
+	_EVRHMDType_name_4 = "Dell_UnknownDell_Visor"
+	_EVRHMDType_name_5 = "Lenovo_UnknownLenovo_Explorer"
+	_EVRHMDType_name_6 = "HP_UnknownHP_WindowsMR"
+	_EVRHMDType_name_7 = "Samsung_UnknownSamsung_Odyssey"
+	_EVRHMDType_name_8 = "Unannounced_UnknownUnannounced_WindowsMR"
+)
+
+var (
+	_EVRHMDType_index_0 = [...]uint8{0, 4, 11, 18, 29, 37}
+	_EVRHMDType_index_1 = [...]uint8{0, 11, 21, 31, 42}
+	_EVRHMDType_index_3 = [...]uint8{0, 12, 26}
+	_EVRHMDType_index_4 = [...]uint8{0, 12, 22}
+	_EVRHMDType_index_5 = [...]uint8{0, 14, 29}
+	_EVRHMDType_index_6 = [...]uint8{0, 10, 22}
+	_EVRHMDType_index_7 = [...]uint8{0, 15, 30}
+	_EVRHMDType_index_8 = [...]uint8{0, 19, 40}
+)
+
+func (i EVRHMDType) String() string {
+	switch {
+	case -1 <= i && i <= 3:
+		i -= -1
+		return _EVRHMDType_name_0[_EVRHMDType_index_0[i]:_EVRHMDType_index_0[i+1]]
+	case 20 <= i && i <= 23:
+		i -= 20
+		return _EVRHMDType_name_1[_EVRHMDType_index_1[i]:_EVRHMDType_index_1[i+1]]
+	case i == 40:
+		return _EVRHMDType_name_2
+	case 50 <= i && i <= 51:
+		i -= 50
+		return _EVRHMDType_name_3[_EVRHMDType_index_3[i]:_EVRHMDType_index_3[i+1]]
+	case 60 <= i && i <= 61:
+		i -= 60
+		return _EVRHMDType_name_4[_EVRHMDType_index_4[i]:_EVRHMDType_index_4[i+1]]
+	case 70 <= i && i <= 71:
+		i -= 70
+		return _EVRHMDType_name_5[_EVRHMDType_index_5[i]:_EVRHMDType_index_5[i+1]]
+	case 80 <= i && i <= 81:
+		i -= 80
+		return _EVRHMDType_name_6[_EVRHMDType_index_6[i]:_EVRHMDType_index_6[i+1]]
+	case 90 <= i && i <= 91:
+		i -= 90
+		return _EVRHMDType_name_7[_EVRHMDType_index_7[i]:_EVRHMDType_index_7[i+1]]
+	case 100 <= i && i <= 101:
+		i -= 100
+		return _EVRHMDType_name_8[_EVRHMDType_index_8[i]:_EVRHMDType_index_8[i+1]]
+	default:
+		return "EVRHMDType(" + strconv.FormatInt(int64(i), 10) + ")"
+	}
+}
+
+func _() {
+	// An "invalid array index" compiler error signifies that the constant values have changed.
+	// Re-run the stringer command to generate them again.
+	var x [1]struct{}
+	_ = x[EGameIDType_App-0]
+	_ = x[EGameIDType_GameMod-1]
+	_ = x[EGameIDType_Shortcut-2]
+	_ = x[EGameIDType_P2P-3]
+}
+
+const _EGameIDType_name = "AppGameModShortcutP2P"
+
+var _EGameIDType_index = [...]uint8{0, 3, 10, 18, 21}
+
+func (i EGameIDType) String() string {
+	if i < 0 || i >= EGameIDType(len(_EGameIDType_index)-1) {
+		return "EGameIDType(" + strconv.FormatInt(int64(i), 10) + ")"
+	}
+	return _EGameIDType_name[_EGameIDType_index[i]:_EGameIDType_index[i+1]]
+}
+
+func _() {
+	// An "invalid array index" compiler error signifies that the constant values have changed.
+	// Re-run the stringer command to generate them again.
+	var x [1]struct{}
+	_ = x[EFailureType_EFailureFlushedCallbackQueue-0]
+	_ = x[EFailureType_EFailurePipeFail-1]
+}
+
+const _EFailureType_name = "EFailureFlushedCallbackQueueEFailurePipeFail"
+
+var _EFailureType_index = [...]uint8{0, 28, 44}
+
+func (i EFailureType) String() string {
+	if i < 0 || i >= EFailureType(len(_EFailureType_index)-1) {
+		return "EFailureType(" + strconv.FormatInt(int64(i), 10) + ")"
+	}
+	return _EFailureType_name[_EFailureType_index[i]:_EFailureType_index[i+1]]
+}
+
+func _() {
+	// An "invalid array index" compiler error signifies that the constant values have changed.
+	// Re-run the stringer command to generate them again.
+	var x [1]struct{}
+	_ = x[EFriendRelationship_None-0]
+	_ = x[EFriendRelationship_Blocked-1]
+	_ = x[EFriendRelationship_RequestRecipient-2]
+	_ = x[EFriendRelationship_Friend-3]
+	_ = x[EFriendRelationship_RequestInitiator-4]
+	_ = x[EFriendRelationship_Ignored-5]
+	_ = x[EFriendRelationship_IgnoredFriend-6]
+	_ = x[EFriendRelationship_Suggested_DEPRECATED-7]
+	_ = x[EFriendRelationship_Max-8]
+}
+
+const _EFriendRelationship_name = "NoneBlockedRequestRecipientFriendRequestInitiatorIgnoredIgnoredFriendSuggested_DEPRECATEDMax"
+
+var _EFriendRelationship_index = [...]uint8{0, 4, 11, 27, 33, 49, 56, 69, 89, 92}
+
+func (i EFriendRelationship) String() string {
+	if i < 0 || i >= EFriendRelationship(len(_EFriendRelationship_index)-1) {
+		return "EFriendRelationship(" + strconv.FormatInt(int64(i), 10) + ")"
+	}
+	return _EFriendRelationship_name[_EFriendRelationship_index[i]:_EFriendRelationship_index[i+1]]
+}
+
+func _() {
+	// An "invalid array index" compiler error signifies that the constant values have changed.
+	// Re-run the stringer command to generate them again.
+	var x [1]struct{}
+	_ = x[EPersonaState_Offline-0]
+	_ = x[EPersonaState_Online-1]
+	_ = x[EPersonaState_Busy-2]
+	_ = x[EPersonaState_Away-3]
+	_ = x[EPersonaState_Snooze-4]
+	_ = x[EPersonaState_LookingToTrade-5]
+	_ = x[EPersonaState_LookingToPlay-6]
+	_ = x[EPersonaState_Max-7]
+}
+
+const _EPersonaState_name = "OfflineOnlineBusyAwaySnoozeLookingToTradeLookingToPlayMax"
+
+var _EPersonaState_index = [...]uint8{0, 7, 13, 17, 21, 27, 41, 54, 57}
+
+func (i EPersonaState) String() string {
+	if i < 0 || i >= EPersonaState(len(_EPersonaState_index)-1) {
+		return "EPersonaState(" + strconv.FormatInt(int64(i), 10) + ")"
+	}
+	return _EPersonaState_name[_EPersonaState_index[i]:_EPersonaState_index[i+1]]
+}
+
+func _() {
+	// An "invalid array index" compiler error signifies that the constant values have changed.
+	// Re-run the stringer command to generate them again.
+	var x [1]struct{}
+	_ = x[EFriendFlags_EFriendFlagNone-0]
+	_ = x[EFriendFlags_EFriendFlagBlocked-1]
+	_ = x[EFriendFlags_EFriendFlagFriendshipRequested-2]
+	_ = x[EFriendFlags_EFriendFlagImmediate-4]
+	_ = x[EFriendFlags_EFriendFlagClanMember-8]
+	_ = x[EFriendFlags_EFriendFlagOnGameServer-16]
+	_ = x[EFriendFlags_EFriendFlagRequestingFriendship-128]
+	_ = x[EFriendFlags_EFriendFlagRequestingInfo-256]
+	_ = x[EFriendFlags_EFriendFlagIgnored-512]
+	_ = x[EFriendFlags_EFriendFlagIgnoredFriend-1024]
+	_ = x[EFriendFlags_EFriendFlagChatMember-4096]
+	_ = x[EFriendFlags_EFriendFlagAll-65535]
+}
+
+const (
+	_EFriendFlags_name_0 = "EFriendFlagNoneEFriendFlagBlockedEFriendFlagFriendshipRequested"
+	_EFriendFlags_name_1 = "EFriendFlagImmediate"
+	_EFriendFlags_name_2 = "EFriendFlagClanMember"
+	_EFriendFlags_name_3 = "EFriendFlagOnGameServer"
+	_EFriendFlags_name_4 = "EFriendFlagRequestingFriendship"
+	_EFriendFlags_name_5 = "EFriendFlagRequestingInfo"
+	_EFriendFlags_name_6 = "EFriendFlagIgnored"
+	_EFriendFlags_name_7 = "EFriendFlagIgnoredFriend"
+	_EFriendFlags_name_8 = "EFriendFlagChatMember"
+	_EFriendFlags_name_9 = "EFriendFlagAll"
+)
+
+var (
+	_EFriendFlags_index_0 = [...]uint8{0, 15, 33, 63}
+)
+
+func (i EFriendFlags) String() string {
+	switch {
+	case 0 <= i && i <= 2:
+		return _EFriendFlags_name_0[_EFriendFlags_index_0[i]:_EFriendFlags_index_0[i+1]]
+	case i == 4:
+		return _EFriendFlags_name_1
+	case i == 8:
+		return _EFriendFlags_name_2
+	case i == 16:
+		return _EFriendFlags_name_3
+	case i == 128:
+		return _EFriendFlags_name_4
+	case i == 256:
+		return _EFriendFlags_name_5
+	case i == 512:
+		return _EFriendFlags_name_6
+	case i == 1024:
+		return _EFriendFlags_name_7
+	case i == 4096:
+		return _EFriendFlags_name_8
+	case i == 65535:
+		return _EFriendFlags_name_9
+	default:
+		return "EFriendFlags(" + strconv.FormatInt(int64(i), 10) + ")"
+	}
+}
+
+func _() {
+	// An "invalid array index" compiler error signifies that the constant values have changed.
+	// Re-run the stringer command to generate them again.
+	var x [1]struct{}
+	_ = x[EUserRestriction_nUserRestrictionNone-0]
+	_ = x[EUserRestriction_nUserRestrictionUnknown-1]
+	_ = x[EUserRestriction_nUserRestrictionAnyChat-2]
+	_ = x[EUserRestriction_nUserRestrictionVoiceChat-4]
+	_ = x[EUserRestriction_nUserRestrictionGroupChat-8]
+	_ = x[EUserRestriction_nUserRestrictionRating-16]
+	_ = x[EUserRestriction_nUserRestrictionGameInvites-32]
+	_ = x[EUserRestriction_nUserRestrictionTrading-64]
+}
+
+const (
+	_EUserRestriction_name_0 = "nUserRestrictionNonenUserRestrictionUnknownnUserRestrictionAnyChat"
+	_EUserRestriction_name_1 = "nUserRestrictionVoiceChat"
+	_EUserRestriction_name_2 = "nUserRestrictionGroupChat"
+	_EUserRestriction_name_3 = "nUserRestrictionRating"
+	_EUserRestriction_name_4 = "nUserRestrictionGameInvites"
+	_EUserRestriction_name_5 = "nUserRestrictionTrading"
+)
+
+var (
+	_EUserRestriction_index_0 = [...]uint8{0, 20, 43, 66}
+)
+
+func (i EUserRestriction) String() string {
+	switch {
+	case 0 <= i && i <= 2:
+		return _EUserRestriction_name_0[_EUserRestriction_index_0[i]:_EUserRestriction_index_0[i+1]]
+	case i == 4:
+		return _EUserRestriction_name_1
+	case i == 8:
+		return _EUserRestriction_name_2
+	case i == 16:
+		return _EUserRestriction_name_3
+	case i == 32:
+		return _EUserRestriction_name_4
+	case i == 64:
+		return _EUserRestriction_name_5
+	default:
+		return "EUserRestriction(" + strconv.FormatInt(int64(i), 10) + ")"
+	}
+}
+
+func _() {
+	// An "invalid array index" compiler error signifies that the constant values have changed.
+	// Re-run the stringer command to generate them again.
+	var x [1]struct{}
+	_ = x[EOverlayToStoreFlag_None-0]
+	_ = x[EOverlayToStoreFlag_AddToCart-1]
+	_ = x[EOverlayToStoreFlag_AddToCartAndShow-2]
+}
+
+const _EOverlayToStoreFlag_name = "NoneAddToCartAddToCartAndShow"
+
+var _EOverlayToStoreFlag_index = [...]uint8{0, 4, 13, 29}
+
+func (i EOverlayToStoreFlag) String() string {
+	if i < 0 || i >= EOverlayToStoreFlag(len(_EOverlayToStoreFlag_index)-1) {
+		return "EOverlayToStoreFlag(" + strconv.FormatInt(int64(i), 10) + ")"
+	}
+	return _EOverlayToStoreFlag_name[_EOverlayToStoreFlag_index[i]:_EOverlayToStoreFlag_index[i+1]]
+}
+
+func _() {
+	// An "invalid array index" compiler error signifies that the constant values have changed.
+	// Re-run the stringer command to generate them again.
+	var x [1]struct{}
+	_ = x[EPersonaChange_Name-1]
+	_ = x[EPersonaChange_Status-2]
+	_ = x[EPersonaChange_ComeOnline-4]
+	_ = x[EPersonaChange_GoneOffline-8]
+	_ = x[EPersonaChange_GamePlayed-16]
+	_ = x[EPersonaChange_GameServer-32]
+	_ = x[EPersonaChange_Avatar-64]
+	_ = x[EPersonaChange_JoinedSource-128]
+	_ = x[EPersonaChange_LeftSource-256]
+	_ = x[EPersonaChange_RelationshipChanged-512]
+	_ = x[EPersonaChange_NameFirstSet-1024]
+	_ = x[EPersonaChange_FacebookInfo-2048]
+	_ = x[EPersonaChange_Nickname-4096]
+	_ = x[EPersonaChange_SteamLevel-8192]
+}
+
+const _EPersonaChange_name = "NameStatusComeOnlineGoneOfflineGamePlayedGameServerAvatarJoinedSourceLeftSourceRelationshipChangedNameFirstSetFacebookInfoNicknameSteamLevel"
+
+var _EPersonaChange_map = map[EPersonaChange]string{
+	1:    _EPersonaChange_name[0:4],
+	2:    _EPersonaChange_name[4:10],
+	4:    _EPersonaChange_name[10:20],
+	8:    _EPersonaChange_name[20:31],
+	16:   _EPersonaChange_name[31:41],
+	32:   _EPersonaChange_name[41:51],
+	64:   _EPersonaChange_name[51:57],
+	128:  _EPersonaChange_name[57:69],
+	256:  _EPersonaChange_name[69:79],
+	512:  _EPersonaChange_name[79:98],
+	1024: _EPersonaChange_name[98:110],
+	2048: _EPersonaChange_name[110:122],
+	4096: _EPersonaChange_name[122:130],
+	8192: _EPersonaChange_name[130:140],
+}
+
+func (i EPersonaChange) String() string {
+	if str, ok := _EPersonaChange_map[i]; ok {
+		return str
+	}
+	return "EPersonaChange(" + strconv.FormatInt(int64(i), 10) + ")"
+}
+
+func _() {
+	// An "invalid array index" compiler error signifies that the constant values have changed.
+	// Re-run the stringer command to generate them again.
+	var x [1]struct{}
+	_ = x[ESteamAPICallFailure_None - -1]
+	_ = x[ESteamAPICallFailure_SteamGone-0]
+	_ = x[ESteamAPICallFailure_NetworkFailure-1]
+	_ = x[ESteamAPICallFailure_InvalidHandle-2]
+	_ = x[ESteamAPICallFailure_MismatchedCallback-3]
+}
+
+const _ESteamAPICallFailure_name = "NoneSteamGoneNetworkFailureInvalidHandleMismatchedCallback"
+
+var _ESteamAPICallFailure_index = [...]uint8{0, 4, 13, 27, 40, 58}
+
+func (i ESteamAPICallFailure) String() string {
+	i -= -1
+	if i < 0 || i >= ESteamAPICallFailure(len(_ESteamAPICallFailure_index)-1) {
+		return "ESteamAPICallFailure(" + strconv.FormatInt(int64(i+-1), 10) + ")"
+	}
+	return _ESteamAPICallFailure_name[_ESteamAPICallFailure_index[i]:_ESteamAPICallFailure_index[i+1]]
+}
+
+func _() {
+	// An "invalid array index" compiler error signifies that the constant values have changed.
+	// Re-run the stringer command to generate them again.
+	var x [1]struct{}
+	_ = x[EGamepadTextInputMode_Normal-0]
+	_ = x[EGamepadTextInputMode_Password-1]
+}
+
+const _EGamepadTextInputMode_name = "NormalPassword"
+
+var _EGamepadTextInputMode_index = [...]uint8{0, 6, 14}
+
+func (i EGamepadTextInputMode) String() string {
+	if i < 0 || i >= EGamepadTextInputMode(len(_EGamepadTextInputMode_index)-1) {
+		return "EGamepadTextInputMode(" + strconv.FormatInt(int64(i), 10) + ")"
+	}
+	return _EGamepadTextInputMode_name[_EGamepadTextInputMode_index[i]:_EGamepadTextInputMode_index[i+1]]
+}
+
+func _() {
+	// An "invalid array index" compiler error signifies that the constant values have changed.
+	// Re-run the stringer command to generate them again.
+	var x [1]struct{}
+	_ = x[EGamepadTextInputLineMode_SingleLine-0]
+	_ = x[EGamepadTextInputLineMode_MultipleLines-1]
+}
+
+const _EGamepadTextInputLineMode_name = "SingleLineMultipleLines"
+
+var _EGamepadTextInputLineMode_index = [...]uint8{0, 10, 23}
+
+func (i EGamepadTextInputLineMode) String() string {
+	if i < 0 || i >= EGamepadTextInputLineMode(len(_EGamepadTextInputLineMode_index)-1) {
+		return "EGamepadTextInputLineMode(" + strconv.FormatInt(int64(i), 10) + ")"
+	}
+	return _EGamepadTextInputLineMode_name[_EGamepadTextInputLineMode_index[i]:_EGamepadTextInputLineMode_index[i+1]]
+}
+
+func _() {
+	// An "invalid array index" compiler error signifies that the constant values have changed.
+	// Re-run the stringer command to generate them again.
+	var x [1]struct{}
+	_ = x[ECheckFileSignature_InvalidSignature-0]
+	_ = x[ECheckFileSignature_ValidSignature-1]
+	_ = x[ECheckFileSignature_FileNotFound-2]
+	_ = x[ECheckFileSignature_NoSignaturesFoundForThisApp-3]
+	_ = x[ECheckFileSignature_NoSignaturesFoundForThisFile-4]
+}
+
+const _ECheckFileSignature_name = "InvalidSignatureValidSignatureFileNotFoundNoSignaturesFoundForThisAppNoSignaturesFoundForThisFile"
+
+var _ECheckFileSignature_index = [...]uint8{0, 16, 30, 42, 69, 97}
+
+func (i ECheckFileSignature) String() string {
+	if i < 0 || i >= ECheckFileSignature(len(_ECheckFileSignature_index)-1) {
+		return "ECheckFileSignature(" + strconv.FormatInt(int64(i), 10) + ")"
+	}
+	return _ECheckFileSignature_name[_ECheckFileSignature_index[i]:_ECheckFileSignature_index[i+1]]
+}
+
+func _() {
+	// An "invalid array index" compiler error signifies that the constant values have changed.
+	// Re-run the stringer command to generate them again.
+	var x [1]struct{}
+	_ = x[EMatchMakingServerResponse_ServerResponded-0]
+	_ = x[EMatchMakingServerResponse_ServerFailedToRespond-1]
+	_ = x[EMatchMakingServerResponse_NoServersListedOnMasterServer-2]
+}
+
+const _EMatchMakingServerResponse_name = "ServerRespondedServerFailedToRespondNoServersListedOnMasterServer"
+
+var _EMatchMakingServerResponse_index = [...]uint8{0, 15, 36, 65}
+
+func (i EMatchMakingServerResponse) String() string {
+	if i < 0 || i >= EMatchMakingServerResponse(len(_EMatchMakingServerResponse_index)-1) {
+		return "EMatchMakingServerResponse(" + strconv.FormatInt(int64(i), 10) + ")"
+	}
+	return _EMatchMakingServerResponse_name[_EMatchMakingServerResponse_index[i]:_EMatchMakingServerResponse_index[i+1]]
+}
+
+func _() {
+	// An "invalid array index" compiler error signifies that the constant values have changed.
+	// Re-run the stringer command to generate them again.
+	var x [1]struct{}
+	_ = x[ELobbyType_Private-0]
+	_ = x[ELobbyType_FriendsOnly-1]
+	_ = x[ELobbyType_Public-2]
+	_ = x[ELobbyType_Invisible-3]
+}
+
+const _ELobbyType_name = "PrivateFriendsOnlyPublicInvisible"
+
+var _ELobbyType_index = [...]uint8{0, 7, 18, 24, 33}
+
+func (i ELobbyType) String() string {
+	if i < 0 || i >= ELobbyType(len(_ELobbyType_index)-1) {
+		return "ELobbyType(" + strconv.FormatInt(int64(i), 10) + ")"
+	}
+	return _ELobbyType_name[_ELobbyType_index[i]:_ELobbyType_index[i+1]]
+}
+
+func _() {
+	// An "invalid array index" compiler error signifies that the constant values have changed.
+	// Re-run the stringer command to generate them again.
+	var x [1]struct{}
+	_ = x[ELobbyComparison_EqualToOrLessThan - -2]
+	_ = x[ELobbyComparison_LessThan - -1]
+	_ = x[ELobbyComparison_Equal-0]
+	_ = x[ELobbyComparison_GreaterThan-1]
+	_ = x[ELobbyComparison_EqualToOrGreaterThan-2]
+	_ = x[ELobbyComparison_NotEqual-3]
+}
+
+const _ELobbyComparison_name = "EqualToOrLessThanLessThanEqualGreaterThanEqualToOrGreaterThanNotEqual"
+
+var _ELobbyComparison_index = [...]uint8{0, 17, 25, 30, 41, 61, 69}
+
+func (i ELobbyComparison) String() string {
+	i -= -2
+	if i < 0 || i >= ELobbyComparison(len(_ELobbyComparison_index)-1) {
+		return "ELobbyComparison(" + strconv.FormatInt(int64(i+-2), 10) + ")"
+	}
+	return _ELobbyComparison_name[_ELobbyComparison_index[i]:_ELobbyComparison_index[i+1]]
+}
+
+func _() {
+	// An "invalid array index" compiler error signifies that the constant values have changed.
+	// Re-run the stringer command to generate them again.
+	var x [1]struct{}
+	_ = x[ELobbyDistanceFilter_Close-0]
+	_ = x[ELobbyDistanceFilter_Default-1]
+	_ = x[ELobbyDistanceFilter_Far-2]
+	_ = x[ELobbyDistanceFilter_Worldwide-3]
+}
+
+const _ELobbyDistanceFilter_name = "CloseDefaultFarWorldwide"
+
+var _ELobbyDistanceFilter_index = [...]uint8{0, 5, 12, 15, 24}
+
+func (i ELobbyDistanceFilter) String() string {
+	if i < 0 || i >= ELobbyDistanceFilter(len(_ELobbyDistanceFilter_index)-1) {
+		return "ELobbyDistanceFilter(" + strconv.FormatInt(int64(i), 10) + ")"
+	}
+	return _ELobbyDistanceFilter_name[_ELobbyDistanceFilter_index[i]:_ELobbyDistanceFilter_index[i+1]]
+}
+
+func _() {
+	// An "invalid array index" compiler error signifies that the constant values have changed.
+	// Re-run the stringer command to generate them again.
+	var x [1]struct{}
+	_ = x[EChatMemberStateChange_Entered-1]
+	_ = x[EChatMemberStateChange_Left-2]
+	_ = x[EChatMemberStateChange_Disconnected-4]
+	_ = x[EChatMemberStateChange_Kicked-8]
+	_ = x[EChatMemberStateChange_Banned-16]
+}
+
+const (
+	_EChatMemberStateChange_name_0 = "EnteredLeft"
+	_EChatMemberStateChange_name_1 = "Disconnected"
+	_EChatMemberStateChange_name_2 = "Kicked"
+	_EChatMemberStateChange_name_3 = "Banned"
+)
+
+var (
+	_EChatMemberStateChange_index_0 = [...]uint8{0, 7, 11}
+)
+
+func (i EChatMemberStateChange) String() string {
+	switch {
+	case 1 <= i && i <= 2:
+		i -= 1
+		return _EChatMemberStateChange_name_0[_EChatMemberStateChange_index_0[i]:_EChatMemberStateChange_index_0[i+1]]
+	case i == 4:
+		return _EChatMemberStateChange_name_1
+	case i == 8:
+		return _EChatMemberStateChange_name_2
+	case i == 16:
+		return _EChatMemberStateChange_name_3
+	default:
+		return "EChatMemberStateChange(" + strconv.FormatInt(int64(i), 10) + ")"
+	}
+}
+
+func _() {
+	// An "invalid array index" compiler error signifies that the constant values have changed.
+	// Re-run the stringer command to generate them again.
+	var x [1]struct{}
+	_ = x[ERemoteStoragePlatform_None-0]
+	_ = x[ERemoteStoragePlatform_Windows-1]
+	_ = x[ERemoteStoragePlatform_OSX-2]
+	_ = x[ERemoteStoragePlatform_PS3-4]
+	_ = x[ERemoteStoragePlatform_Linux-8]
+	_ = x[ERemoteStoragePlatform_Reserved2-16]
+	_ = x[ERemoteStoragePlatform_All - -1]
+}
+
+const (
+	_ERemoteStoragePlatform_name_0 = "AllNoneWindowsOSX"
+	_ERemoteStoragePlatform_name_1 = "PS3"
+	_ERemoteStoragePlatform_name_2 = "Linux"
+	_ERemoteStoragePlatform_name_3 = "Reserved2"
+)
+
+var (
+	_ERemoteStoragePlatform_index_0 = [...]uint8{0, 3, 7, 14, 17}
+)
+
+func (i ERemoteStoragePlatform) String() string {
+	switch {
+	case -1 <= i && i <= 2:
+		i -= -1
+		return _ERemoteStoragePlatform_name_0[_ERemoteStoragePlatform_index_0[i]:_ERemoteStoragePlatform_index_0[i+1]]
+	case i == 4:
+		return _ERemoteStoragePlatform_name_1
+	case i == 8:
+		return _ERemoteStoragePlatform_name_2
+	case i == 16:
+		return _ERemoteStoragePlatform_name_3
+	default:
+		return "ERemoteStoragePlatform(" + strconv.FormatInt(int64(i), 10) + ")"
+	}
+}
+
+func _() {
+	// An "invalid array index" compiler error signifies that the constant values have changed.
+	// Re-run the stringer command to generate them again.
+	var x [1]struct{}
+	_ = x[ERemoteStoragePublishedFileVisibility_Public-0]
+	_ = x[ERemoteStoragePublishedFileVisibility_FriendsOnly-1]
+	_ = x[ERemoteStoragePublishedFileVisibility_Private-2]
+}
+
+const _ERemoteStoragePublishedFileVisibility_name = "PublicFriendsOnlyPrivate"
+
+var _ERemoteStoragePublishedFileVisibility_index = [...]uint8{0, 6, 17, 24}
+
+func (i ERemoteStoragePublishedFileVisibility) String() string {
+	if i < 0 || i >= ERemoteStoragePublishedFileVisibility(len(_ERemoteStoragePublishedFileVisibility_index)-1) {
+		return "ERemoteStoragePublishedFileVisibility(" + strconv.FormatInt(int64(i), 10) + ")"
+	}
+	return _ERemoteStoragePublishedFileVisibility_name[_ERemoteStoragePublishedFileVisibility_index[i]:_ERemoteStoragePublishedFileVisibility_index[i+1]]
+}
+
+func _() {
+	// An "invalid array index" compiler error signifies that the constant values have changed.
+	// Re-run the stringer command to generate them again.
+	var x [1]struct{}
+	_ = x[EWorkshopFileType_First-0]
+	_ = x[EWorkshopFileType_Community-0]
+	_ = x[EWorkshopFileType_Microtransaction-1]
+	_ = x[EWorkshopFileType_Collection-2]
+	_ = x[EWorkshopFileType_Art-3]
+	_ = x[EWorkshopFileType_Video-4]
+	_ = x[EWorkshopFileType_Screenshot-5]
+	_ = x[EWorkshopFileType_Game-6]
+	_ = x[EWorkshopFileType_Software-7]
+	_ = x[EWorkshopFileType_Concept-8]
+	_ = x[EWorkshopFileType_WebGuide-9]
+	_ = x[EWorkshopFileType_IntegratedGuide-10]
+	_ = x[EWorkshopFileType_Merch-11]
+	_ = x[EWorkshopFileType_ControllerBinding-12]
+	_ = x[EWorkshopFileType_SteamworksAccessInvite-13]
+	_ = x[EWorkshopFileType_SteamVideo-14]
+	_ = x[EWorkshopFileType_GameManagedItem-15]
+	_ = x[EWorkshopFileType_Max-16]
+}
+
+const _EWorkshopFileType_name = "FirstMicrotransactionCollectionArtVideoScreenshotGameSoftwareConceptWebGuideIntegratedGuideMerchControllerBindingSteamworksAccessInviteSteamVideoGameManagedItemMax"
+
+var _EWorkshopFileType_index = [...]uint8{0, 5, 21, 31, 34, 39, 49, 53, 61, 68, 76, 91, 96, 113, 135, 145, 160, 163}
+
+func (i EWorkshopFileType) String() string {
+	if i < 0 || i >= EWorkshopFileType(len(_EWorkshopFileType_index)-1) {
+		return "EWorkshopFileType(" + strconv.FormatInt(int64(i), 10) + ")"
+	}
+	return _EWorkshopFileType_name[_EWorkshopFileType_index[i]:_EWorkshopFileType_index[i+1]]
+}
+
+func _() {
+	// An "invalid array index" compiler error signifies that the constant values have changed.
+	// Re-run the stringer command to generate them again.
+	var x [1]struct{}
+	_ = x[EWorkshopVote_Unvoted-0]
+	_ = x[EWorkshopVote_For-1]
+	_ = x[EWorkshopVote_Against-2]
+	_ = x[EWorkshopVote_Later-3]
+}
+
+const _EWorkshopVote_name = "UnvotedForAgainstLater"
+
+var _EWorkshopVote_index = [...]uint8{0, 7, 10, 17, 22}
+
+func (i EWorkshopVote) String() string {
+	if i < 0 || i >= EWorkshopVote(len(_EWorkshopVote_index)-1) {
+		return "EWorkshopVote(" + strconv.FormatInt(int64(i), 10) + ")"
+	}
+	return _EWorkshopVote_name[_EWorkshopVote_index[i]:_EWorkshopVote_index[i+1]]
+}
+
+func _() {
+	// An "invalid array index" compiler error signifies that the constant values have changed.
+	// Re-run the stringer command to generate them again.
+	var x [1]struct{}
+	_ = x[EWorkshopFileAction_Played-0]
+	_ = x[EWorkshopFileAction_Completed-1]
+}
+
+const _EWorkshopFileAction_name = "PlayedCompleted"
+
+var _EWorkshopFileAction_index = [...]uint8{0, 6, 15}
+
+func (i EWorkshopFileAction) String() string {
+	if i < 0 || i >= EWorkshopFileAction(len(_EWorkshopFileAction_index)-1) {
+		return "EWorkshopFileAction(" + strconv.FormatInt(int64(i), 10) + ")"
+	}
+	return _EWorkshopFileAction_name[_EWorkshopFileAction_index[i]:_EWorkshopFileAction_index[i+1]]
+}
+
+func _() {
+	// An "invalid array index" compiler error signifies that the constant values have changed.
+	// Re-run the stringer command to generate them again.
+	var x [1]struct{}
+	_ = x[EWorkshopEnumerationType_RankedByVote-0]
+	_ = x[EWorkshopEnumerationType_Recent-1]
+	_ = x[EWorkshopEnumerationType_Trending-2]
+	_ = x[EWorkshopEnumerationType_FavoritesOfFriends-3]
+	_ = x[EWorkshopEnumerationType_VotedByFriends-4]
+	_ = x[EWorkshopEnumerationType_ContentByFriends-5]
+	_ = x[EWorkshopEnumerationType_RecentFromFollowedUsers-6]
+}
+
+const _EWorkshopEnumerationType_name = "RankedByVoteRecentTrendingFavoritesOfFriendsVotedByFriendsContentByFriendsRecentFromFollowedUsers"
+
+var _EWorkshopEnumerationType_index = [...]uint8{0, 12, 18, 26, 44, 58, 74, 97}
+
+func (i EWorkshopEnumerationType) String() string {
+	if i < 0 || i >= EWorkshopEnumerationType(len(_EWorkshopEnumerationType_index)-1) {
+		return "EWorkshopEnumerationType(" + strconv.FormatInt(int64(i), 10) + ")"
+	}
+	return _EWorkshopEnumerationType_name[_EWorkshopEnumerationType_index[i]:_EWorkshopEnumerationType_index[i+1]]
+}
+
+func _() {
+	// An "invalid array index" compiler error signifies that the constant values have changed.
+	// Re-run the stringer command to generate them again.
+	var x [1]struct{}
+	_ = x[EWorkshopVideoProvider_None-0]
+	_ = x[EWorkshopVideoProvider_Youtube-1]
+}
+
+const _EWorkshopVideoProvider_name = "NoneYoutube"
+
+var _EWorkshopVideoProvider_index = [...]uint8{0, 4, 11}
+
+func (i EWorkshopVideoProvider) String() string {
+	if i < 0 || i >= EWorkshopVideoProvider(len(_EWorkshopVideoProvider_index)-1) {
+		return "EWorkshopVideoProvider(" + strconv.FormatInt(int64(i), 10) + ")"
+	}
+	return _EWorkshopVideoProvider_name[_EWorkshopVideoProvider_index[i]:_EWorkshopVideoProvider_index[i+1]]
+}
+
+func _() {
+	// An "invalid array index" compiler error signifies that the constant values have changed.
+	// Re-run the stringer command to generate them again.
+	var x [1]struct{}
+	_ = x[EUGCReadAction_EUGCRead_ContinueReadingUntilFinished-0]
+	_ = x[EUGCReadAction_EUGCRead_ContinueReading-1]
+	_ = x[EUGCReadAction_EUGCRead_Close-2]
+}
+
+const _EUGCReadAction_name = "EUGCRead_ContinueReadingUntilFinishedEUGCRead_ContinueReadingEUGCRead_Close"
+
+var _EUGCReadAction_index = [...]uint8{0, 37, 61, 75}
+
+func (i EUGCReadAction) String() string {
+	if i < 0 || i >= EUGCReadAction(len(_EUGCReadAction_index)-1) {
+		return "EUGCReadAction(" + strconv.FormatInt(int64(i), 10) + ")"
+	}
+	return _EUGCReadAction_name[_EUGCReadAction_index[i]:_EUGCReadAction_index[i+1]]
+}
+
+func _() {
+	// An "invalid array index" compiler error signifies that the constant values have changed.
+	// Re-run the stringer command to generate them again.
+	var x [1]struct{}
+	_ = x[ELeaderboardDataRequest_Global-0]
+	_ = x[ELeaderboardDataRequest_GlobalAroundUser-1]
+	_ = x[ELeaderboardDataRequest_Friends-2]
+	_ = x[ELeaderboardDataRequest_Users-3]
+}
+
+const _ELeaderboardDataRequest_name = "GlobalGlobalAroundUserFriendsUsers"
+
+var _ELeaderboardDataRequest_index = [...]uint8{0, 6, 22, 29, 34}
+
+func (i ELeaderboardDataRequest) String() string {
+	if i < 0 || i >= ELeaderboardDataRequest(len(_ELeaderboardDataRequest_index)-1) {
+		return "ELeaderboardDataRequest(" + strconv.FormatInt(int64(i), 10) + ")"
+	}
+	return _ELeaderboardDataRequest_name[_ELeaderboardDataRequest_index[i]:_ELeaderboardDataRequest_index[i+1]]
+}
+
+func _() {
+	// An "invalid array index" compiler error signifies that the constant values have changed.
+	// Re-run the stringer command to generate them again.
+	var x [1]struct{}
+	_ = x[ELeaderboardSortMethod_None-0]
+	_ = x[ELeaderboardSortMethod_Ascending-1]
+	_ = x[ELeaderboardSortMethod_Descending-2]
+}
+
+const _ELeaderboardSortMethod_name = "NoneAscendingDescending"
+
+var _ELeaderboardSortMethod_index = [...]uint8{0, 4, 13, 23}
+
+func (i ELeaderboardSortMethod) String() string {
+	if i < 0 || i >= ELeaderboardSortMethod(len(_ELeaderboardSortMethod_index)-1) {
+		return "ELeaderboardSortMethod(" + strconv.FormatInt(int64(i), 10) + ")"
+	}
+	return _ELeaderboardSortMethod_name[_ELeaderboardSortMethod_index[i]:_ELeaderboardSortMethod_index[i+1]]
+}
+
+func _() {
+	// An "invalid array index" compiler error signifies that the constant values have changed.
+	// Re-run the stringer command to generate them again.
+	var x [1]struct{}
+	_ = x[ELeaderboardDisplayType_None-0]
+	_ = x[ELeaderboardDisplayType_Numeric-1]
+	_ = x[ELeaderboardDisplayType_TimeSeconds-2]
+	_ = x[ELeaderboardDisplayType_TimeMilliSeconds-3]
+}
+
+const _ELeaderboardDisplayType_name = "NoneNumericTimeSecondsTimeMilliSeconds"
+
+var _ELeaderboardDisplayType_index = [...]uint8{0, 4, 11, 22, 38}
+
+func (i ELeaderboardDisplayType) String() string {
+	if i < 0 || i >= ELeaderboardDisplayType(len(_ELeaderboardDisplayType_index)-1) {
+		return "ELeaderboardDisplayType(" + strconv.FormatInt(int64(i), 10) + ")"
+	}
+	return _ELeaderboardDisplayType_name[_ELeaderboardDisplayType_index[i]:_ELeaderboardDisplayType_index[i+1]]
+}
+
+func _() {
+	// An "invalid array index" compiler error signifies that the constant values have changed.
+	// Re-run the stringer command to generate them again.
+	var x [1]struct{}
+	_ = x[ELeaderboardUploadScoreMethod_None-0]
+	_ = x[ELeaderboardUploadScoreMethod_KeepBest-1]
+	_ = x[ELeaderboardUploadScoreMethod_ForceUpdate-2]
+}
+
+const _ELeaderboardUploadScoreMethod_name = "NoneKeepBestForceUpdate"
+
+var _ELeaderboardUploadScoreMethod_index = [...]uint8{0, 4, 12, 23}
+
+func (i ELeaderboardUploadScoreMethod) String() string {
+	if i < 0 || i >= ELeaderboardUploadScoreMethod(len(_ELeaderboardUploadScoreMethod_index)-1) {
+		return "ELeaderboardUploadScoreMethod(" + strconv.FormatInt(int64(i), 10) + ")"
+	}
+	return _ELeaderboardUploadScoreMethod_name[_ELeaderboardUploadScoreMethod_index[i]:_ELeaderboardUploadScoreMethod_index[i+1]]
+}
+
+func _() {
+	// An "invalid array index" compiler error signifies that the constant values have changed.
+	// Re-run the stringer command to generate them again.
+	var x [1]struct{}
+	_ = x[ERegisterActivationCodeResult_OK-0]
+	_ = x[ERegisterActivationCodeResult_Fail-1]
+	_ = x[ERegisterActivationCodeResult_AlreadyRegistered-2]
+	_ = x[ERegisterActivationCodeResult_Timeout-3]
+	_ = x[ERegisterActivationCodeResult_ERegisterActivationCodeAlreadyOwned-4]
+}
+
+const _ERegisterActivationCodeResult_name = "OKFailAlreadyRegisteredTimeoutERegisterActivationCodeAlreadyOwned"
+
+var _ERegisterActivationCodeResult_index = [...]uint8{0, 2, 6, 23, 30, 65}
+
+func (i ERegisterActivationCodeResult) String() string {
+	if i < 0 || i >= ERegisterActivationCodeResult(len(_ERegisterActivationCodeResult_index)-1) {
+		return "ERegisterActivationCodeResult(" + strconv.FormatInt(int64(i), 10) + ")"
+	}
+	return _ERegisterActivationCodeResult_name[_ERegisterActivationCodeResult_index[i]:_ERegisterActivationCodeResult_index[i+1]]
+}
+
+func _() {
+	// An "invalid array index" compiler error signifies that the constant values have changed.
+	// Re-run the stringer command to generate them again.
+	var x [1]struct{}
+	_ = x[EP2PSessionError_None-0]
+	_ = x[EP2PSessionError_NotRunningApp-1]
+	_ = x[EP2PSessionError_NoRightsToApp-2]
+	_ = x[EP2PSessionError_DestinationNotLoggedIn-3]
+	_ = x[EP2PSessionError_Timeout-4]
+	_ = x[EP2PSessionError_Max-5]
+}
+
+const _EP2PSessionError_name = "NoneNotRunningAppNoRightsToAppDestinationNotLoggedInTimeoutMax"
+
+var _EP2PSessionError_index = [...]uint8{0, 4, 17, 30, 52, 59, 62}
+
+func (i EP2PSessionError) String() string {
+	if i < 0 || i >= EP2PSessionError(len(_EP2PSessionError_index)-1) {
+		return "EP2PSessionError(" + strconv.FormatInt(int64(i), 10) + ")"
+	}
+	return _EP2PSessionError_name[_EP2PSessionError_index[i]:_EP2PSessionError_index[i+1]]
+}
+
+func _() {
+	// An "invalid array index" compiler error signifies that the constant values have changed.
+	// Re-run the stringer command to generate them again.
+	var x [1]struct{}
+	_ = x[EP2PSend_Unreliable-0]
+	_ = x[EP2PSend_UnreliableNoDelay-1]
+	_ = x[EP2PSend_Reliable-2]
+	_ = x[EP2PSend_ReliableWithBuffering-3]
+}
+
+const _EP2PSend_name = "UnreliableUnreliableNoDelayReliableReliableWithBuffering"
+
+var _EP2PSend_index = [...]uint8{0, 10, 27, 35, 56}
+
+func (i EP2PSend) String() string {
+	if i < 0 || i >= EP2PSend(len(_EP2PSend_index)-1) {
+		return "EP2PSend(" + strconv.FormatInt(int64(i), 10) + ")"
+	}
+	return _EP2PSend_name[_EP2PSend_index[i]:_EP2PSend_index[i+1]]
+}
+
+func _() {
+	// An "invalid array index" compiler error signifies that the constant values have changed.
+	// Re-run the stringer command to generate them again.
+	var x [1]struct{}
+	_ = x[ESNetSocketState_Invalid-0]
+	_ = x[ESNetSocketState_Connected-1]
+	_ = x[ESNetSocketState_Initiated-10]
+	_ = x[ESNetSocketState_LocalCandidatesFound-11]
+	_ = x[ESNetSocketState_ReceivedRemoteCandidates-12]
+	_ = x[ESNetSocketState_ChallengeHandshake-15]
+	_ = x[ESNetSocketState_Disconnecting-21]
+	_ = x[ESNetSocketState_LocalDisconnect-22]
+	_ = x[ESNetSocketState_TimeoutDuringConnect-23]
+	_ = x[ESNetSocketState_RemoteEndDisconnected-24]
+	_ = x[ESNetSocketState_ConnectionBroken-25]
+}
+
+const (
+	_ESNetSocketState_name_0 = "InvalidConnected"
+	_ESNetSocketState_name_1 = "InitiatedLocalCandidatesFoundReceivedRemoteCandidates"
+	_ESNetSocketState_name_2 = "ChallengeHandshake"
+	_ESNetSocketState_name_3 = "DisconnectingLocalDisconnectTimeoutDuringConnectRemoteEndDisconnectedConnectionBroken"
+)
+
+var (
+	_ESNetSocketState_index_0 = [...]uint8{0, 7, 16}
+	_ESNetSocketState_index_1 = [...]uint8{0, 9, 29, 53}
+	_ESNetSocketState_index_3 = [...]uint8{0, 13, 28, 48, 69, 85}
+)
+
+func (i ESNetSocketState) String() string {
+	switch {
+	case 0 <= i && i <= 1:
+		return _ESNetSocketState_name_0[_ESNetSocketState_index_0[i]:_ESNetSocketState_index_0[i+1]]
+	case 10 <= i && i <= 12:
+		i -= 10
+		return _ESNetSocketState_name_1[_ESNetSocketState_index_1[i]:_ESNetSocketState_index_1[i+1]]
+	case i == 15:
+		return _ESNetSocketState_name_2
+	case 21 <= i && i <= 25:
+		i -= 21
+		return _ESNetSocketState_name_3[_ESNetSocketState_index_3[i]:_ESNetSocketState_index_3[i+1]]
+	default:
+		return "ESNetSocketState(" + strconv.FormatInt(int64(i), 10) + ")"
+	}
+}
+
+func _() {
+	// An "invalid array index" compiler error signifies that the constant values have changed.
+	// Re-run the stringer command to generate them again.
+	var x [1]struct{}
+	_ = x[ESNetSocketConnectionType_NotConnected-0]
+	_ = x[ESNetSocketConnectionType_UDP-1]
+	_ = x[ESNetSocketConnectionType_UDPRelay-2]
+}
+
+const _ESNetSocketConnectionType_name = "NotConnectedUDPUDPRelay"
+
+var _ESNetSocketConnectionType_index = [...]uint8{0, 12, 15, 23}
+
+func (i ESNetSocketConnectionType) String() string {
+	if i < 0 || i >= ESNetSocketConnectionType(len(_ESNetSocketConnectionType_index)-1) {
+		return "ESNetSocketConnectionType(" + strconv.FormatInt(int64(i), 10) + ")"
+	}
+	return _ESNetSocketConnectionType_name[_ESNetSocketConnectionType_index[i]:_ESNetSocketConnectionType_index[i+1]]
+}
+
+func _() {
+	// An "invalid array index" compiler error signifies that the constant values have changed.
+	// Re-run the stringer command to generate them again.
+	var x [1]struct{}
+	_ = x[EVRScreenshotType_None-0]
+	_ = x[EVRScreenshotType_Mono-1]
+	_ = x[EVRScreenshotType_Stereo-2]
+	_ = x[EVRScreenshotType_MonoCubemap-3]
+	_ = x[EVRScreenshotType_MonoPanorama-4]
+	_ = x[EVRScreenshotType_StereoPanorama-5]
+}
+
+const _EVRScreenshotType_name = "NoneMonoStereoMonoCubemapMonoPanoramaStereoPanorama"
+
+var _EVRScreenshotType_index = [...]uint8{0, 4, 8, 14, 25, 37, 51}
+
+func (i EVRScreenshotType) String() string {
+	if i < 0 || i >= EVRScreenshotType(len(_EVRScreenshotType_index)-1) {
+		return "EVRScreenshotType(" + strconv.FormatInt(int64(i), 10) + ")"
+	}
+	return _EVRScreenshotType_name[_EVRScreenshotType_index[i]:_EVRScreenshotType_index[i+1]]
+}
+
+func _() {
+	// An "invalid array index" compiler error signifies that the constant values have changed.
+	// Re-run the stringer command to generate them again.
+	var x [1]struct{}
+	_ = x[EAudioPlayback_Undefined-0]
+	_ = x[EAudioPlayback_Playing-1]
+	_ = x[EAudioPlayback_Paused-2]
+	_ = x[EAudioPlayback_Idle-3]
+}
+
+const _EAudioPlayback_name = "UndefinedPlayingPausedIdle"
+
+var _EAudioPlayback_index = [...]uint8{0, 9, 16, 22, 26}
+
+func (i EAudioPlayback) String() string {
+	if i < 0 || i >= EAudioPlayback(len(_EAudioPlayback_index)-1) {
+		return "EAudioPlayback(" + strconv.FormatInt(int64(i), 10) + ")"
+	}
+	return _EAudioPlayback_name[_EAudioPlayback_index[i]:_EAudioPlayback_index[i+1]]
+}
+
+func _() {
+	// An "invalid array index" compiler error signifies that the constant values have changed.
+	// Re-run the stringer command to generate them again.
+	var x [1]struct{}
+	_ = x[EHTTPMethod_Invalid-0]
+	_ = x[EHTTPMethod_GET-1]
+	_ = x[EHTTPMethod_HEAD-2]
+	_ = x[EHTTPMethod_POST-3]
+	_ = x[EHTTPMethod_PUT-4]
+	_ = x[EHTTPMethod_DELETE-5]
+	_ = x[EHTTPMethod_OPTIONS-6]
+	_ = x[EHTTPMethod_PATCH-7]
+}
+
+const _EHTTPMethod_name = "InvalidGETHEADPOSTPUTDELETEOPTIONSPATCH"
+
+var _EHTTPMethod_index = [...]uint8{0, 7, 10, 14, 18, 21, 27, 34, 39}
+
+func (i EHTTPMethod) String() string {
+	if i < 0 || i >= EHTTPMethod(len(_EHTTPMethod_index)-1) {
+		return "EHTTPMethod(" + strconv.FormatInt(int64(i), 10) + ")"
+	}
+	return _EHTTPMethod_name[_EHTTPMethod_index[i]:_EHTTPMethod_index[i+1]]
+}
+
+func _() {
+	// An "invalid array index" compiler error signifies that the constant values have changed.
+	// Re-run the stringer command to generate them again.
+	var x [1]struct{}
+	_ = x[EHTTPStatusCode_Invalid-0]
+	_ = x[EHTTPStatusCode_100Continue-100]
+	_ = x[EHTTPStatusCode_101SwitchingProtocols-101]
+	_ = x[EHTTPStatusCode_200OK-200]
+	_ = x[EHTTPStatusCode_201Created-201]
+	_ = x[EHTTPStatusCode_202Accepted-202]
+	_ = x[EHTTPStatusCode_203NonAuthoritative-203]
+	_ = x[EHTTPStatusCode_204NoContent-204]
+	_ = x[EHTTPStatusCode_205ResetContent-205]
+	_ = x[EHTTPStatusCode_206PartialContent-206]
+	_ = x[EHTTPStatusCode_300MultipleChoices-300]
+	_ = x[EHTTPStatusCode_301MovedPermanently-301]
+	_ = x[EHTTPStatusCode_302Found-302]
+	_ = x[EHTTPStatusCode_303SeeOther-303]
+	_ = x[EHTTPStatusCode_304NotModified-304]
+	_ = x[EHTTPStatusCode_305UseProxy-305]
+	_ = x[EHTTPStatusCode_307TemporaryRedirect-307]
+	_ = x[EHTTPStatusCode_400BadRequest-400]
+	_ = x[EHTTPStatusCode_401Unauthorized-401]
+	_ = x[EHTTPStatusCode_402PaymentRequired-402]
+	_ = x[EHTTPStatusCode_403Forbidden-403]
+	_ = x[EHTTPStatusCode_404NotFound-404]
+	_ = x[EHTTPStatusCode_405MethodNotAllowed-405]
+	_ = x[EHTTPStatusCode_406NotAcceptable-406]
+	_ = x[EHTTPStatusCode_407ProxyAuthRequired-407]
+	_ = x[EHTTPStatusCode_408RequestTimeout-408]
+	_ = x[EHTTPStatusCode_409Conflict-409]
+	_ = x[EHTTPStatusCode_410Gone-410]
+	_ = x[EHTTPStatusCode_411LengthRequired-411]
+	_ = x[EHTTPStatusCode_412PreconditionFailed-412]
+	_ = x[EHTTPStatusCode_413RequestEntityTooLarge-413]
+	_ = x[EHTTPStatusCode_414RequestURITooLong-414]
+	_ = x[EHTTPStatusCode_415UnsupportedMediaType-415]
+	_ = x[EHTTPStatusCode_416RequestedRangeNotSatisfiable-416]
+	_ = x[EHTTPStatusCode_417ExpectationFailed-417]
+	_ = x[EHTTPStatusCode_4xxUnknown-418]
+	_ = x[EHTTPStatusCode_429TooManyRequests-429]
+	_ = x[EHTTPStatusCode_500InternalServerError-500]
+	_ = x[EHTTPStatusCode_501NotImplemented-501]
+	_ = x[EHTTPStatusCode_502BadGateway-502]
+	_ = x[EHTTPStatusCode_503ServiceUnavailable-503]
+	_ = x[EHTTPStatusCode_504GatewayTimeout-504]
+	_ = x[EHTTPStatusCode_505HTTPVersionNotSupported-505]
+	_ = x[EHTTPStatusCode_5xxUnknown-599]
+}
+
+const (
+	_EHTTPStatusCode_name_0 = "Invalid"
+	_EHTTPStatusCode_name_1 = "100Continue101SwitchingProtocols"
+	_EHTTPStatusCode_name_2 = "200OK201Created202Accepted203NonAuthoritative204NoContent205ResetContent206PartialContent"
+	_EHTTPStatusCode_name_3 = "300MultipleChoices301MovedPermanently302Found303SeeOther304NotModified305UseProxy"
+	_EHTTPStatusCode_name_4 = "307TemporaryRedirect"
+	_EHTTPStatusCode_name_5 = "400BadRequest401Unauthorized402PaymentRequired403Forbidden404NotFound405MethodNotAllowed406NotAcceptable407ProxyAuthRequired408RequestTimeout409Conflict410Gone411LengthRequired412PreconditionFailed413RequestEntityTooLarge414RequestURITooLong415UnsupportedMediaType416RequestedRangeNotSatisfiable417ExpectationFailed4xxUnknown"
+	_EHTTPStatusCode_name_6 = "429TooManyRequests"
+	_EHTTPStatusCode_name_7 = "500InternalServerError501NotImplemented502BadGateway503ServiceUnavailable504GatewayTimeout505HTTPVersionNotSupported"
+	_EHTTPStatusCode_name_8 = "5xxUnknown"
+)
+
+var (
+	_EHTTPStatusCode_index_1 = [...]uint8{0, 11, 32}
+	_EHTTPStatusCode_index_2 = [...]uint8{0, 5, 15, 26, 45, 57, 72, 89}
+	_EHTTPStatusCode_index_3 = [...]uint8{0, 18, 37, 45, 56, 70, 81}
+	_EHTTPStatusCode_index_5 = [...]uint16{0, 13, 28, 46, 58, 69, 88, 104, 124, 141, 152, 159, 176, 197, 221, 241, 264, 295, 315, 325}
+	_EHTTPStatusCode_index_7 = [...]uint8{0, 22, 39, 52, 73, 90, 116}
+)
+
+func (i EHTTPStatusCode) String() string {
+	switch {
+	case i == 0:
+		return _EHTTPStatusCode_name_0
+	case 100 <= i && i <= 101:
+		i -= 100
+		return _EHTTPStatusCode_name_1[_EHTTPStatusCode_index_1[i]:_EHTTPStatusCode_index_1[i+1]]
+	case 200 <= i && i <= 206:
+		i -= 200
+		return _EHTTPStatusCode_name_2[_EHTTPStatusCode_index_2[i]:_EHTTPStatusCode_index_2[i+1]]
+	case 300 <= i && i <= 305:
+		i -= 300
+		return _EHTTPStatusCode_name_3[_EHTTPStatusCode_index_3[i]:_EHTTPStatusCode_index_3[i+1]]
+	case i == 307:
+		return _EHTTPStatusCode_name_4
+	case 400 <= i && i <= 418:
+		i -= 400
+		return _EHTTPStatusCode_name_5[_EHTTPStatusCode_index_5[i]:_EHTTPStatusCode_index_5[i+1]]
+	case i == 429:
+		return _EHTTPStatusCode_name_6
+	case 500 <= i && i <= 505:
+		i -= 500
+		return _EHTTPStatusCode_name_7[_EHTTPStatusCode_index_7[i]:_EHTTPStatusCode_index_7[i+1]]
+	case i == 599:
+		return _EHTTPStatusCode_name_8
+	default:
+		return "EHTTPStatusCode(" + strconv.FormatInt(int64(i), 10) + ")"
+	}
+}
+
+func _() {
+	// An "invalid array index" compiler error signifies that the constant values have changed.
+	// Re-run the stringer command to generate them again.
+	var x [1]struct{}
+	_ = x[ESteamControllerPad_Left-0]
+	_ = x[ESteamControllerPad_Right-1]
+}
+
+const _ESteamControllerPad_name = "LeftRight"
+
+var _ESteamControllerPad_index = [...]uint8{0, 4, 9}
+
+func (i ESteamControllerPad) String() string {
+	if i < 0 || i >= ESteamControllerPad(len(_ESteamControllerPad_index)-1) {
+		return "ESteamControllerPad(" + strconv.FormatInt(int64(i), 10) + ")"
+	}
+	return _ESteamControllerPad_name[_ESteamControllerPad_index[i]:_ESteamControllerPad_index[i+1]]
+}
+
+func _() {
+	// An "invalid array index" compiler error signifies that the constant values have changed.
+	// Re-run the stringer command to generate them again.
+	var x [1]struct{}
+	_ = x[EControllerSource_None-0]
+	_ = x[EControllerSource_LeftTrackpad-1]
+	_ = x[EControllerSource_RightTrackpad-2]
+	_ = x[EControllerSource_Joystick-3]
+	_ = x[EControllerSource_ABXY-4]
+	_ = x[EControllerSource_Switch-5]
+	_ = x[EControllerSource_LeftTrigger-6]
+	_ = x[EControllerSource_RightTrigger-7]
+	_ = x[EControllerSource_Gyro-8]
+	_ = x[EControllerSource_CenterTrackpad-9]
+	_ = x[EControllerSource_RightJoystick-10]
+	_ = x[EControllerSource_DPad-11]
+	_ = x[EControllerSource_Key-12]
+	_ = x[EControllerSource_Mouse-13]
+	_ = x[EControllerSource_Count-14]
+}
+
+const _EControllerSource_name = "NoneLeftTrackpadRightTrackpadJoystickABXYSwitchLeftTriggerRightTriggerGyroCenterTrackpadRightJoystickDPadKeyMouseCount"
+
+var _EControllerSource_index = [...]uint8{0, 4, 16, 29, 37, 41, 47, 58, 70, 74, 88, 101, 105, 108, 113, 118}
+
+func (i EControllerSource) String() string {
+	if i < 0 || i >= EControllerSource(len(_EControllerSource_index)-1) {
+		return "EControllerSource(" + strconv.FormatInt(int64(i), 10) + ")"
+	}
+	return _EControllerSource_name[_EControllerSource_index[i]:_EControllerSource_index[i+1]]
+}
+
+func _() {
+	// An "invalid array index" compiler error signifies that the constant values have changed.
+	// Re-run the stringer command to generate them again.
+	var x [1]struct{}
+	_ = x[EControllerSourceMode_None-0]
+	_ = x[EControllerSourceMode_Dpad-1]
+	_ = x[EControllerSourceMode_Buttons-2]
+	_ = x[EControllerSourceMode_FourButtons-3]
+	_ = x[EControllerSourceMode_AbsoluteMouse-4]
+	_ = x[EControllerSourceMode_RelativeMouse-5]
+	_ = x[EControllerSourceMode_JoystickMove-6]
+	_ = x[EControllerSourceMode_JoystickMouse-7]
+	_ = x[EControllerSourceMode_JoystickCamera-8]
+	_ = x[EControllerSourceMode_ScrollWheel-9]
+	_ = x[EControllerSourceMode_Trigger-10]
+	_ = x[EControllerSourceMode_TouchMenu-11]
+	_ = x[EControllerSourceMode_MouseJoystick-12]
+	_ = x[EControllerSourceMode_MouseRegion-13]
+	_ = x[EControllerSourceMode_RadialMenu-14]
+	_ = x[EControllerSourceMode_SingleButton-15]
+	_ = x[EControllerSourceMode_Switches-16]
+}
+
+const _EControllerSourceMode_name = "NoneDpadButtonsFourButtonsAbsoluteMouseRelativeMouseJoystickMoveJoystickMouseJoystickCameraScrollWheelTriggerTouchMenuMouseJoystickMouseRegionRadialMenuSingleButtonSwitches"
+
+var _EControllerSourceMode_index = [...]uint8{0, 4, 8, 15, 26, 39, 52, 64, 77, 91, 102, 109, 118, 131, 142, 152, 164, 172}
+
+func (i EControllerSourceMode) String() string {
+	if i < 0 || i >= EControllerSourceMode(len(_EControllerSourceMode_index)-1) {
+		return "EControllerSourceMode(" + strconv.FormatInt(int64(i), 10) + ")"
+	}
+	return _EControllerSourceMode_name[_EControllerSourceMode_index[i]:_EControllerSourceMode_index[i+1]]
+}
+
+func _() {
+	// An "invalid array index" compiler error signifies that the constant values have changed.
+	// Re-run the stringer command to generate them again.
+	var x [1]struct{}
+	_ = x[EControllerActionOrigin_None-0]
+	_ = x[EControllerActionOrigin_A-1]
+	_ = x[EControllerActionOrigin_B-2]
+	_ = x[EControllerActionOrigin_X-3]
+	_ = x[EControllerActionOrigin_Y-4]
+	_ = x[EControllerActionOrigin_LeftBumper-5]
+	_ = x[EControllerActionOrigin_RightBumper-6]
+	_ = x[EControllerActionOrigin_LeftGrip-7]
+	_ = x[EControllerActionOrigin_RightGrip-8]
+	_ = x[EControllerActionOrigin_Start-9]
+	_ = x[EControllerActionOrigin_Back-10]
+	_ = x[EControllerActionOrigin_LeftPad_Touch-11]
+	_ = x[EControllerActionOrigin_LeftPad_Swipe-12]
+	_ = x[EControllerActionOrigin_LeftPad_Click-13]
+	_ = x[EControllerActionOrigin_LeftPad_DPadNorth-14]
+	_ = x[EControllerActionOrigin_LeftPad_DPadSouth-15]
+	_ = x[EControllerActionOrigin_LeftPad_DPadWest-16]
+	_ = x[EControllerActionOrigin_LeftPad_DPadEast-17]
+	_ = x[EControllerActionOrigin_RightPad_Touch-18]
+	_ = x[EControllerActionOrigin_RightPad_Swipe-19]
+	_ = x[EControllerActionOrigin_RightPad_Click-20]
+	_ = x[EControllerActionOrigin_RightPad_DPadNorth-21]
+	_ = x[EControllerActionOrigin_RightPad_DPadSouth-22]
+	_ = x[EControllerActionOrigin_RightPad_DPadWest-23]
+	_ = x[EControllerActionOrigin_RightPad_DPadEast-24]
+	_ = x[EControllerActionOrigin_LeftTrigger_Pull-25]
+	_ = x[EControllerActionOrigin_LeftTrigger_Click-26]
+	_ = x[EControllerActionOrigin_RightTrigger_Pull-27]
+	_ = x[EControllerActionOrigin_RightTrigger_Click-28]
+	_ = x[EControllerActionOrigin_LeftStick_Move-29]
+	_ = x[EControllerActionOrigin_LeftStick_Click-30]
+	_ = x[EControllerActionOrigin_LeftStick_DPadNorth-31]
+	_ = x[EControllerActionOrigin_LeftStick_DPadSouth-32]
+	_ = x[EControllerActionOrigin_LeftStick_DPadWest-33]
+	_ = x[EControllerActionOrigin_LeftStick_DPadEast-34]
+	_ = x[EControllerActionOrigin_Gyro_Move-35]
+	_ = x[EControllerActionOrigin_Gyro_Pitch-36]
+	_ = x[EControllerActionOrigin_Gyro_Yaw-37]
+	_ = x[EControllerActionOrigin_Gyro_Roll-38]
+	_ = x[EControllerActionOrigin_PS4_X-39]
+	_ = x[EControllerActionOrigin_PS4_Circle-40]
+	_ = x[EControllerActionOrigin_PS4_Triangle-41]
+	_ = x[EControllerActionOrigin_PS4_Square-42]
+	_ = x[EControllerActionOrigin_PS4_LeftBumper-43]
+	_ = x[EControllerActionOrigin_PS4_RightBumper-44]
+	_ = x[EControllerActionOrigin_PS4_Options-45]
+	_ = x[EControllerActionOrigin_PS4_Share-46]
+	_ = x[EControllerActionOrigin_PS4_LeftPad_Touch-47]
+	_ = x[EControllerActionOrigin_PS4_LeftPad_Swipe-48]
+	_ = x[EControllerActionOrigin_PS4_LeftPad_Click-49]
+	_ = x[EControllerActionOrigin_PS4_LeftPad_DPadNorth-50]
+	_ = x[EControllerActionOrigin_PS4_LeftPad_DPadSouth-51]
+	_ = x[EControllerActionOrigin_PS4_LeftPad_DPadWest-52]
+	_ = x[EControllerActionOrigin_PS4_LeftPad_DPadEast-53]
+	_ = x[EControllerActionOrigin_PS4_RightPad_Touch-54]
+	_ = x[EControllerActionOrigin_PS4_RightPad_Swipe-55]
+	_ = x[EControllerActionOrigin_PS4_RightPad_Click-56]
+	_ = x[EControllerActionOrigin_PS4_RightPad_DPadNorth-57]
+	_ = x[EControllerActionOrigin_PS4_RightPad_DPadSouth-58]
+	_ = x[EControllerActionOrigin_PS4_RightPad_DPadWest-59]
+	_ = x[EControllerActionOrigin_PS4_RightPad_DPadEast-60]
+	_ = x[EControllerActionOrigin_PS4_CenterPad_Touch-61]
+	_ = x[EControllerActionOrigin_PS4_CenterPad_Swipe-62]
+	_ = x[EControllerActionOrigin_PS4_CenterPad_Click-63]
+	_ = x[EControllerActionOrigin_PS4_CenterPad_DPadNorth-64]
+	_ = x[EControllerActionOrigin_PS4_CenterPad_DPadSouth-65]
+	_ = x[EControllerActionOrigin_PS4_CenterPad_DPadWest-66]
+	_ = x[EControllerActionOrigin_PS4_CenterPad_DPadEast-67]
+	_ = x[EControllerActionOrigin_PS4_LeftTrigger_Pull-68]
+	_ = x[EControllerActionOrigin_PS4_LeftTrigger_Click-69]
+	_ = x[EControllerActionOrigin_PS4_RightTrigger_Pull-70]
+	_ = x[EControllerActionOrigin_PS4_RightTrigger_Click-71]
+	_ = x[EControllerActionOrigin_PS4_LeftStick_Move-72]
+	_ = x[EControllerActionOrigin_PS4_LeftStick_Click-73]
+	_ = x[EControllerActionOrigin_PS4_LeftStick_DPadNorth-74]
+	_ = x[EControllerActionOrigin_PS4_LeftStick_DPadSouth-75]
+	_ = x[EControllerActionOrigin_PS4_LeftStick_DPadWest-76]
+	_ = x[EControllerActionOrigin_PS4_LeftStick_DPadEast-77]
+	_ = x[EControllerActionOrigin_PS4_RightStick_Move-78]
+	_ = x[EControllerActionOrigin_PS4_RightStick_Click-79]
+	_ = x[EControllerActionOrigin_PS4_RightStick_DPadNorth-80]
+	_ = x[EControllerActionOrigin_PS4_RightStick_DPadSouth-81]
+	_ = x[EControllerActionOrigin_PS4_RightStick_DPadWest-82]
+	_ = x[EControllerActionOrigin_PS4_RightStick_DPadEast-83]
+	_ = x[EControllerActionOrigin_PS4_DPad_North-84]
+	_ = x[EControllerActionOrigin_PS4_DPad_South-85]
+	_ = x[EControllerActionOrigin_PS4_DPad_West-86]
+	_ = x[EControllerActionOrigin_PS4_DPad_East-87]
+	_ = x[EControllerActionOrigin_PS4_Gyro_Move-88]
+	_ = x[EControllerActionOrigin_PS4_Gyro_Pitch-89]
+	_ = x[EControllerActionOrigin_PS4_Gyro_Yaw-90]
+	_ = x[EControllerActionOrigin_PS4_Gyro_Roll-91]
+	_ = x[EControllerActionOrigin_XBoxOne_A-92]
+	_ = x[EControllerActionOrigin_XBoxOne_B-93]
+	_ = x[EControllerActionOrigin_XBoxOne_X-94]
+	_ = x[EControllerActionOrigin_XBoxOne_Y-95]
+	_ = x[EControllerActionOrigin_XBoxOne_LeftBumper-96]
+	_ = x[EControllerActionOrigin_XBoxOne_RightBumper-97]
+	_ = x[EControllerActionOrigin_XBoxOne_Menu-98]
+	_ = x[EControllerActionOrigin_XBoxOne_View-99]
+	_ = x[EControllerActionOrigin_XBoxOne_LeftTrigger_Pull-100]
+	_ = x[EControllerActionOrigin_XBoxOne_LeftTrigger_Click-101]
+	_ = x[EControllerActionOrigin_XBoxOne_RightTrigger_Pull-102]
+	_ = x[EControllerActionOrigin_XBoxOne_RightTrigger_Click-103]
+	_ = x[EControllerActionOrigin_XBoxOne_LeftStick_Move-104]
+	_ = x[EControllerActionOrigin_XBoxOne_LeftStick_Click-105]
+	_ = x[EControllerActionOrigin_XBoxOne_LeftStick_DPadNorth-106]
+	_ = x[EControllerActionOrigin_XBoxOne_LeftStick_DPadSouth-107]
+	_ = x[EControllerActionOrigin_XBoxOne_LeftStick_DPadWest-108]
+	_ = x[EControllerActionOrigin_XBoxOne_LeftStick_DPadEast-109]
+	_ = x[EControllerActionOrigin_XBoxOne_RightStick_Move-110]
+	_ = x[EControllerActionOrigin_XBoxOne_RightStick_Click-111]
+	_ = x[EControllerActionOrigin_XBoxOne_RightStick_DPadNorth-112]
+	_ = x[EControllerActionOrigin_XBoxOne_RightStick_DPadSouth-113]
+	_ = x[EControllerActionOrigin_XBoxOne_RightStick_DPadWest-114]
+	_ = x[EControllerActionOrigin_XBoxOne_RightStick_DPadEast-115]
+	_ = x[EControllerActionOrigin_XBoxOne_DPad_North-116]
+	_ = x[EControllerActionOrigin_XBoxOne_DPad_South-117]
+	_ = x[EControllerActionOrigin_XBoxOne_DPad_West-118]
+	_ = x[EControllerActionOrigin_XBoxOne_DPad_East-119]
+	_ = x[EControllerActionOrigin_XBox360_A-120]
+	_ = x[EControllerActionOrigin_XBox360_B-121]
+	_ = x[EControllerActionOrigin_XBox360_X-122]
+	_ = x[EControllerActionOrigin_XBox360_Y-123]
+	_ = x[EControllerActionOrigin_XBox360_LeftBumper-124]
+	_ = x[EControllerActionOrigin_XBox360_RightBumper-125]
+	_ = x[EControllerActionOrigin_XBox360_Start-126]
+	_ = x[EControllerActionOrigin_XBox360_Back-127]
+	_ = x[EControllerActionOrigin_XBox360_LeftTrigger_Pull-128]
+	_ = x[EControllerActionOrigin_XBox360_LeftTrigger_Click-129]
+	_ = x[EControllerActionOrigin_XBox360_RightTrigger_Pull-130]
+	_ = x[EControllerActionOrigin_XBox360_RightTrigger_Click-131]
+	_ = x[EControllerActionOrigin_XBox360_LeftStick_Move-132]
+	_ = x[EControllerActionOrigin_XBox360_LeftStick_Click-133]
+	_ = x[EControllerActionOrigin_XBox360_LeftStick_DPadNorth-134]
+	_ = x[EControllerActionOrigin_XBox360_LeftStick_DPadSouth-135]
+	_ = x[EControllerActionOrigin_XBox360_LeftStick_DPadWest-136]
+	_ = x[EControllerActionOrigin_XBox360_LeftStick_DPadEast-137]
+	_ = x[EControllerActionOrigin_XBox360_RightStick_Move-138]
+	_ = x[EControllerActionOrigin_XBox360_RightStick_Click-139]
+	_ = x[EControllerActionOrigin_XBox360_RightStick_DPadNorth-140]
+	_ = x[EControllerActionOrigin_XBox360_RightStick_DPadSouth-141]
+	_ = x[EControllerActionOrigin_XBox360_RightStick_DPadWest-142]
+	_ = x[EControllerActionOrigin_XBox360_RightStick_DPadEast-143]
+	_ = x[EControllerActionOrigin_XBox360_DPad_North-144]
+	_ = x[EControllerActionOrigin_XBox360_DPad_South-145]
+	_ = x[EControllerActionOrigin_XBox360_DPad_West-146]
+	_ = x[EControllerActionOrigin_XBox360_DPad_East-147]
+	_ = x[EControllerActionOrigin_SteamV2_A-148]
+	_ = x[EControllerActionOrigin_SteamV2_B-149]
+	_ = x[EControllerActionOrigin_SteamV2_X-150]
+	_ = x[EControllerActionOrigin_SteamV2_Y-151]
+	_ = x[EControllerActionOrigin_SteamV2_LeftBumper-152]
+	_ = x[EControllerActionOrigin_SteamV2_RightBumper-153]
+	_ = x[EControllerActionOrigin_SteamV2_LeftGrip-154]
+	_ = x[EControllerActionOrigin_SteamV2_RightGrip-155]
+	_ = x[EControllerActionOrigin_SteamV2_LeftGrip_Upper-156]
+	_ = x[EControllerActionOrigin_SteamV2_RightGrip_Upper-157]
+	_ = x[EControllerActionOrigin_SteamV2_LeftBumper_Pressure-158]
+	_ = x[EControllerActionOrigin_SteamV2_RightBumper_Pressure-159]
+	_ = x[EControllerActionOrigin_SteamV2_LeftGrip_Pressure-160]
+	_ = x[EControllerActionOrigin_SteamV2_RightGrip_Pressure-161]
+	_ = x[EControllerActionOrigin_SteamV2_LeftGrip_Upper_Pressure-162]
+	_ = x[EControllerActionOrigin_SteamV2_RightGrip_Upper_Pressure-163]
+	_ = x[EControllerActionOrigin_SteamV2_Start-164]
+	_ = x[EControllerActionOrigin_SteamV2_Back-165]
+	_ = x[EControllerActionOrigin_SteamV2_LeftPad_Touch-166]
+	_ = x[EControllerActionOrigin_SteamV2_LeftPad_Swipe-167]
+	_ = x[EControllerActionOrigin_SteamV2_LeftPad_Click-168]
+	_ = x[EControllerActionOrigin_SteamV2_LeftPad_Pressure-169]
+	_ = x[EControllerActionOrigin_SteamV2_LeftPad_DPadNorth-170]
+	_ = x[EControllerActionOrigin_SteamV2_LeftPad_DPadSouth-171]
+	_ = x[EControllerActionOrigin_SteamV2_LeftPad_DPadWest-172]
+	_ = x[EControllerActionOrigin_SteamV2_LeftPad_DPadEast-173]
+	_ = x[EControllerActionOrigin_SteamV2_RightPad_Touch-174]
+	_ = x[EControllerActionOrigin_SteamV2_RightPad_Swipe-175]
+	_ = x[EControllerActionOrigin_SteamV2_RightPad_Click-176]
+	_ = x[EControllerActionOrigin_SteamV2_RightPad_Pressure-177]
+	_ = x[EControllerActionOrigin_SteamV2_RightPad_DPadNorth-178]
+	_ = x[EControllerActionOrigin_SteamV2_RightPad_DPadSouth-179]
+	_ = x[EControllerActionOrigin_SteamV2_RightPad_DPadWest-180]
+	_ = x[EControllerActionOrigin_SteamV2_RightPad_DPadEast-181]
+	_ = x[EControllerActionOrigin_SteamV2_LeftTrigger_Pull-182]
+	_ = x[EControllerActionOrigin_SteamV2_LeftTrigger_Click-183]
+	_ = x[EControllerActionOrigin_SteamV2_RightTrigger_Pull-184]
+	_ = x[EControllerActionOrigin_SteamV2_RightTrigger_Click-185]
+	_ = x[EControllerActionOrigin_SteamV2_LeftStick_Move-186]
+	_ = x[EControllerActionOrigin_SteamV2_LeftStick_Click-187]
+	_ = x[EControllerActionOrigin_SteamV2_LeftStick_DPadNorth-188]
+	_ = x[EControllerActionOrigin_SteamV2_LeftStick_DPadSouth-189]
+	_ = x[EControllerActionOrigin_SteamV2_LeftStick_DPadWest-190]
+	_ = x[EControllerActionOrigin_SteamV2_LeftStick_DPadEast-191]
+	_ = x[EControllerActionOrigin_SteamV2_Gyro_Move-192]
+	_ = x[EControllerActionOrigin_SteamV2_Gyro_Pitch-193]
+	_ = x[EControllerActionOrigin_SteamV2_Gyro_Yaw-194]
+	_ = x[EControllerActionOrigin_SteamV2_Gyro_Roll-195]
+	_ = x[EControllerActionOrigin_Count-196]
+}
+
+const _EControllerActionOrigin_name = "NoneABXYLeftBumperRightBumperLeftGripRightGripStartBackLeftPad_TouchLeftPad_SwipeLeftPad_ClickLeftPad_DPadNorthLeftPad_DPadSouthLeftPad_DPadWestLeftPad_DPadEastRightPad_TouchRightPad_SwipeRightPad_ClickRightPad_DPadNorthRightPad_DPadSouthRightPad_DPadWestRightPad_DPadEastLeftTrigger_PullLeftTrigger_ClickRightTrigger_PullRightTrigger_ClickLeftStick_MoveLeftStick_ClickLeftStick_DPadNorthLeftStick_DPadSouthLeftStick_DPadWestLeftStick_DPadEastGyro_MoveGyro_PitchGyro_YawGyro_RollPS4_XPS4_CirclePS4_TrianglePS4_SquarePS4_LeftBumperPS4_RightBumperPS4_OptionsPS4_SharePS4_LeftPad_TouchPS4_LeftPad_SwipePS4_LeftPad_ClickPS4_LeftPad_DPadNorthPS4_LeftPad_DPadSouthPS4_LeftPad_DPadWestPS4_LeftPad_DPadEastPS4_RightPad_TouchPS4_RightPad_SwipePS4_RightPad_ClickPS4_RightPad_DPadNorthPS4_RightPad_DPadSouthPS4_RightPad_DPadWestPS4_RightPad_DPadEastPS4_CenterPad_TouchPS4_CenterPad_SwipePS4_CenterPad_ClickPS4_CenterPad_DPadNorthPS4_CenterPad_DPadSouthPS4_CenterPad_DPadWestPS4_CenterPad_DPadEastPS4_LeftTrigger_PullPS4_LeftTrigger_ClickPS4_RightTrigger_PullPS4_RightTrigger_ClickPS4_LeftStick_MovePS4_LeftStick_ClickPS4_LeftStick_DPadNorthPS4_LeftStick_DPadSouthPS4_LeftStick_DPadWestPS4_LeftStick_DPadEastPS4_RightStick_MovePS4_RightStick_ClickPS4_RightStick_DPadNorthPS4_RightStick_DPadSouthPS4_RightStick_DPadWestPS4_RightStick_DPadEastPS4_DPad_NorthPS4_DPad_SouthPS4_DPad_WestPS4_DPad_EastPS4_Gyro_MovePS4_Gyro_PitchPS4_Gyro_YawPS4_Gyro_RollXBoxOne_AXBoxOne_BXBoxOne_XXBoxOne_YXBoxOne_LeftBumperXBoxOne_RightBumperXBoxOne_MenuXBoxOne_ViewXBoxOne_LeftTrigger_PullXBoxOne_LeftTrigger_ClickXBoxOne_RightTrigger_PullXBoxOne_RightTrigger_ClickXBoxOne_LeftStick_MoveXBoxOne_LeftStick_ClickXBoxOne_LeftStick_DPadNorthXBoxOne_LeftStick_DPadSouthXBoxOne_LeftStick_DPadWestXBoxOne_LeftStick_DPadEastXBoxOne_RightStick_MoveXBoxOne_RightStick_ClickXBoxOne_RightStick_DPadNorthXBoxOne_RightStick_DPadSouthXBoxOne_RightStick_DPadWestXBoxOne_RightStick_DPadEastXBoxOne_DPad_NorthXBoxOne_DPad_SouthXBoxOne_DPad_WestXBoxOne_DPad_EastXBox360_AXBox360_BXBox360_XXBox360_YXBox360_LeftBumperXBox360_RightBumperXBox360_StartXBox360_BackXBox360_LeftTrigger_PullXBox360_LeftTrigger_ClickXBox360_RightTrigger_PullXBox360_RightTrigger_ClickXBox360_LeftStick_MoveXBox360_LeftStick_ClickXBox360_LeftStick_DPadNorthXBox360_LeftStick_DPadSouthXBox360_LeftStick_DPadWestXBox360_LeftStick_DPadEastXBox360_RightStick_MoveXBox360_RightStick_ClickXBox360_RightStick_DPadNorthXBox360_RightStick_DPadSouthXBox360_RightStick_DPadWestXBox360_RightStick_DPadEastXBox360_DPad_NorthXBox360_DPad_SouthXBox360_DPad_WestXBox360_DPad_EastSteamV2_ASteamV2_BSteamV2_XSteamV2_YSteamV2_LeftBumperSteamV2_RightBumperSteamV2_LeftGripSteamV2_RightGripSteamV2_LeftGrip_UpperSteamV2_RightGrip_UpperSteamV2_LeftBumper_PressureSteamV2_RightBumper_PressureSteamV2_LeftGrip_PressureSteamV2_RightGrip_PressureSteamV2_LeftGrip_Upper_PressureSteamV2_RightGrip_Upper_PressureSteamV2_StartSteamV2_BackSteamV2_LeftPad_TouchSteamV2_LeftPad_SwipeSteamV2_LeftPad_ClickSteamV2_LeftPad_PressureSteamV2_LeftPad_DPadNorthSteamV2_LeftPad_DPadSouthSteamV2_LeftPad_DPadWestSteamV2_LeftPad_DPadEastSteamV2_RightPad_TouchSteamV2_RightPad_SwipeSteamV2_RightPad_ClickSteamV2_RightPad_PressureSteamV2_RightPad_DPadNorthSteamV2_RightPad_DPadSouthSteamV2_RightPad_DPadWestSteamV2_RightPad_DPadEastSteamV2_LeftTrigger_PullSteamV2_LeftTrigger_ClickSteamV2_RightTrigger_PullSteamV2_RightTrigger_ClickSteamV2_LeftStick_MoveSteamV2_LeftStick_ClickSteamV2_LeftStick_DPadNorthSteamV2_LeftStick_DPadSouthSteamV2_LeftStick_DPadWestSteamV2_LeftStick_DPadEastSteamV2_Gyro_MoveSteamV2_Gyro_PitchSteamV2_Gyro_YawSteamV2_Gyro_RollCount"
+
+var _EControllerActionOrigin_index = [...]uint16{0, 4, 5, 6, 7, 8, 18, 29, 37, 46, 51, 55, 68, 81, 94, 111, 128, 144, 160, 174, 188, 202, 220, 238, 255, 272, 288, 305, 322, 340, 354, 369, 388, 407, 425, 443, 452, 462, 470, 479, 484, 494, 506, 516, 530, 545, 556, 565, 582, 599, 616, 637, 658, 678, 698, 716, 734, 752, 774, 796, 817, 838, 857, 876, 895, 918, 941, 963, 985, 1005, 1026, 1047, 1069, 1087, 1106, 1129, 1152, 1174, 1196, 1215, 1235, 1259, 1283, 1306, 1329, 1343, 1357, 1370, 1383, 1396, 1410, 1422, 1435, 1444, 1453, 1462, 1471, 1489, 1508, 1520, 1532, 1556, 1581, 1606, 1632, 1654, 1677, 1704, 1731, 1757, 1783, 1806, 1830, 1858, 1886, 1913, 1940, 1958, 1976, 1993, 2010, 2019, 2028, 2037, 2046, 2064, 2083, 2096, 2108, 2132, 2157, 2182, 2208, 2230, 2253, 2280, 2307, 2333, 2359, 2382, 2406, 2434, 2462, 2489, 2516, 2534, 2552, 2569, 2586, 2595, 2604, 2613, 2622, 2640, 2659, 2675, 2692, 2714, 2737, 2764, 2792, 2817, 2843, 2874, 2906, 2919, 2931, 2952, 2973, 2994, 3018, 3043, 3068, 3092, 3116, 3138, 3160, 3182, 3207, 3233, 3259, 3284, 3309, 3333, 3358, 3383, 3409, 3431, 3454, 3481, 3508, 3534, 3560, 3577, 3595, 3611, 3628, 3633}
+
+func (i EControllerActionOrigin) String() string {
+	if i < 0 || i >= EControllerActionOrigin(len(_EControllerActionOrigin_index)-1) {
+		return "EControllerActionOrigin(" + strconv.FormatInt(int64(i), 10) + ")"
+	}
+	return _EControllerActionOrigin_name[_EControllerActionOrigin_index[i]:_EControllerActionOrigin_index[i+1]]
+}
+
+func _() {
+	// An "invalid array index" compiler error signifies that the constant values have changed.
+	// Re-run the stringer command to generate them again.
+	var x [1]struct{}
+	_ = x[ESteamControllerLEDFlag_SetColor-0]
+	_ = x[ESteamControllerLEDFlag_RestoreUserDefault-1]
+}
+
+const _ESteamControllerLEDFlag_name = "SetColorRestoreUserDefault"
+
+var _ESteamControllerLEDFlag_index = [...]uint8{0, 8, 26}
+
+func (i ESteamControllerLEDFlag) String() string {
+	if i < 0 || i >= ESteamControllerLEDFlag(len(_ESteamControllerLEDFlag_index)-1) {
+		return "ESteamControllerLEDFlag(" + strconv.FormatInt(int64(i), 10) + ")"
+	}
+	return _ESteamControllerLEDFlag_name[_ESteamControllerLEDFlag_index[i]:_ESteamControllerLEDFlag_index[i+1]]
+}
+
+func _() {
+	// An "invalid array index" compiler error signifies that the constant values have changed.
+	// Re-run the stringer command to generate them again.
+	var x [1]struct{}
+	_ = x[ESteamInputType_Unknown-0]
+	_ = x[ESteamInputType_SteamController-1]
+	_ = x[ESteamInputType_XBox360Controller-2]
+	_ = x[ESteamInputType_XBoxOneController-3]
+	_ = x[ESteamInputType_GenericXInput-4]
+	_ = x[ESteamInputType_PS4Controller-5]
+}
+
+const _ESteamInputType_name = "UnknownSteamControllerXBox360ControllerXBoxOneControllerGenericXInputPS4Controller"
+
+var _ESteamInputType_index = [...]uint8{0, 7, 22, 39, 56, 69, 82}
+
+func (i ESteamInputType) String() string {
+	if i < 0 || i >= ESteamInputType(len(_ESteamInputType_index)-1) {
+		return "ESteamInputType(" + strconv.FormatInt(int64(i), 10) + ")"
+	}
+	return _ESteamInputType_name[_ESteamInputType_index[i]:_ESteamInputType_index[i+1]]
+}
+
+func _() {
+	// An "invalid array index" compiler error signifies that the constant values have changed.
+	// Re-run the stringer command to generate them again.
+	var x [1]struct{}
+	_ = x[EUGCMatchingUGCType_Items-0]
+	_ = x[EUGCMatchingUGCType_Items_Mtx-1]
+	_ = x[EUGCMatchingUGCType_Items_ReadyToUse-2]
+	_ = x[EUGCMatchingUGCType_Collections-3]
+	_ = x[EUGCMatchingUGCType_Artwork-4]
+	_ = x[EUGCMatchingUGCType_Videos-5]
+	_ = x[EUGCMatchingUGCType_Screenshots-6]
+	_ = x[EUGCMatchingUGCType_AllGuides-7]
+	_ = x[EUGCMatchingUGCType_WebGuides-8]
+	_ = x[EUGCMatchingUGCType_IntegratedGuides-9]
+	_ = x[EUGCMatchingUGCType_UsableInGame-10]
+	_ = x[EUGCMatchingUGCType_ControllerBindings-11]
+	_ = x[EUGCMatchingUGCType_GameManagedItems-12]
+	_ = x[EUGCMatchingUGCType_All - -1]
+}
+
+const _EUGCMatchingUGCType_name = "AllItemsItems_MtxItems_ReadyToUseCollectionsArtworkVideosScreenshotsAllGuidesWebGuidesIntegratedGuidesUsableInGameControllerBindingsGameManagedItems"
+
+var _EUGCMatchingUGCType_index = [...]uint8{0, 3, 8, 17, 33, 44, 51, 57, 68, 77, 86, 102, 114, 132, 148}
+
+func (i EUGCMatchingUGCType) String() string {
+	i -= -1
+	if i < 0 || i >= EUGCMatchingUGCType(len(_EUGCMatchingUGCType_index)-1) {
+		return "EUGCMatchingUGCType(" + strconv.FormatInt(int64(i+-1), 10) + ")"
+	}
+	return _EUGCMatchingUGCType_name[_EUGCMatchingUGCType_index[i]:_EUGCMatchingUGCType_index[i+1]]
+}
+
+func _() {
+	// An "invalid array index" compiler error signifies that the constant values have changed.
+	// Re-run the stringer command to generate them again.
+	var x [1]struct{}
+	_ = x[EUserUGCList_Published-0]
+	_ = x[EUserUGCList_VotedOn-1]
+	_ = x[EUserUGCList_VotedUp-2]
+	_ = x[EUserUGCList_VotedDown-3]
+	_ = x[EUserUGCList_WillVoteLater-4]
+	_ = x[EUserUGCList_Favorited-5]
+	_ = x[EUserUGCList_Subscribed-6]
+	_ = x[EUserUGCList_UsedOrPlayed-7]
+	_ = x[EUserUGCList_Followed-8]
+}
+
+const _EUserUGCList_name = "PublishedVotedOnVotedUpVotedDownWillVoteLaterFavoritedSubscribedUsedOrPlayedFollowed"
+
+var _EUserUGCList_index = [...]uint8{0, 9, 16, 23, 32, 45, 54, 64, 76, 84}
+
+func (i EUserUGCList) String() string {
+	if i < 0 || i >= EUserUGCList(len(_EUserUGCList_index)-1) {
+		return "EUserUGCList(" + strconv.FormatInt(int64(i), 10) + ")"
+	}
+	return _EUserUGCList_name[_EUserUGCList_index[i]:_EUserUGCList_index[i+1]]
+}
+
+func _() {
+	// An "invalid array index" compiler error signifies that the constant values have changed.
+	// Re-run the stringer command to generate them again.
+	var x [1]struct{}
+	_ = x[EUserUGCListSortOrder_CreationOrderDesc-0]
+	_ = x[EUserUGCListSortOrder_CreationOrderAsc-1]
+	_ = x[EUserUGCListSortOrder_TitleAsc-2]
+	_ = x[EUserUGCListSortOrder_LastUpdatedDesc-3]
+	_ = x[EUserUGCListSortOrder_SubscriptionDateDesc-4]
+	_ = x[EUserUGCListSortOrder_VoteScoreDesc-5]
+	_ = x[EUserUGCListSortOrder_ForModeration-6]
+}
+
+const _EUserUGCListSortOrder_name = "CreationOrderDescCreationOrderAscTitleAscLastUpdatedDescSubscriptionDateDescVoteScoreDescForModeration"
+
+var _EUserUGCListSortOrder_index = [...]uint8{0, 17, 33, 41, 56, 76, 89, 102}
+
+func (i EUserUGCListSortOrder) String() string {
+	if i < 0 || i >= EUserUGCListSortOrder(len(_EUserUGCListSortOrder_index)-1) {
+		return "EUserUGCListSortOrder(" + strconv.FormatInt(int64(i), 10) + ")"
+	}
+	return _EUserUGCListSortOrder_name[_EUserUGCListSortOrder_index[i]:_EUserUGCListSortOrder_index[i+1]]
+}
+
+func _() {
+	// An "invalid array index" compiler error signifies that the constant values have changed.
+	// Re-run the stringer command to generate them again.
+	var x [1]struct{}
+	_ = x[EUGCQuery_RankedByVote-0]
+	_ = x[EUGCQuery_RankedByPublicationDate-1]
+	_ = x[EUGCQuery_AcceptedForGameRankedByAcceptanceDate-2]
+	_ = x[EUGCQuery_RankedByTrend-3]
+	_ = x[EUGCQuery_FavoritedByFriendsRankedByPublicationDate-4]
+	_ = x[EUGCQuery_CreatedByFriendsRankedByPublicationDate-5]
+	_ = x[EUGCQuery_RankedByNumTimesReported-6]
+	_ = x[EUGCQuery_CreatedByFollowedUsersRankedByPublicationDate-7]
+	_ = x[EUGCQuery_NotYetRated-8]
+	_ = x[EUGCQuery_RankedByTotalVotesAsc-9]
+	_ = x[EUGCQuery_RankedByVotesUp-10]
+	_ = x[EUGCQuery_RankedByTextSearch-11]
+	_ = x[EUGCQuery_RankedByTotalUniqueSubscriptions-12]
+	_ = x[EUGCQuery_RankedByPlaytimeTrend-13]
+	_ = x[EUGCQuery_RankedByTotalPlaytime-14]
+	_ = x[EUGCQuery_RankedByAveragePlaytimeTrend-15]
+	_ = x[EUGCQuery_RankedByLifetimeAveragePlaytime-16]
+	_ = x[EUGCQuery_RankedByPlaytimeSessionsTrend-17]
+	_ = x[EUGCQuery_RankedByLifetimePlaytimeSessions-18]
+}
+
+const _EUGCQuery_name = "RankedByVoteRankedByPublicationDateAcceptedForGameRankedByAcceptanceDateRankedByTrendFavoritedByFriendsRankedByPublicationDateCreatedByFriendsRankedByPublicationDateRankedByNumTimesReportedCreatedByFollowedUsersRankedByPublicationDateNotYetRatedRankedByTotalVotesAscRankedByVotesUpRankedByTextSearchRankedByTotalUniqueSubscriptionsRankedByPlaytimeTrendRankedByTotalPlaytimeRankedByAveragePlaytimeTrendRankedByLifetimeAveragePlaytimeRankedByPlaytimeSessionsTrendRankedByLifetimePlaytimeSessions"
+
+var _EUGCQuery_index = [...]uint16{0, 12, 35, 72, 85, 126, 165, 189, 234, 245, 266, 281, 299, 331, 352, 373, 401, 432, 461, 493}
+
+func (i EUGCQuery) String() string {
+	if i < 0 || i >= EUGCQuery(len(_EUGCQuery_index)-1) {
+		return "EUGCQuery(" + strconv.FormatInt(int64(i), 10) + ")"
+	}
+	return _EUGCQuery_name[_EUGCQuery_index[i]:_EUGCQuery_index[i+1]]
+}
+
+func _() {
+	// An "invalid array index" compiler error signifies that the constant values have changed.
+	// Re-run the stringer command to generate them again.
+	var x [1]struct{}
+	_ = x[EItemUpdateStatus_Invalid-0]
+	_ = x[EItemUpdateStatus_PreparingConfig-1]
+	_ = x[EItemUpdateStatus_PreparingContent-2]
+	_ = x[EItemUpdateStatus_UploadingContent-3]
+	_ = x[EItemUpdateStatus_UploadingPreviewFile-4]
+	_ = x[EItemUpdateStatus_CommittingChanges-5]
+}
+
+const _EItemUpdateStatus_name = "InvalidPreparingConfigPreparingContentUploadingContentUploadingPreviewFileCommittingChanges"
+
+var _EItemUpdateStatus_index = [...]uint8{0, 7, 22, 38, 54, 74, 91}
+
+func (i EItemUpdateStatus) String() string {
+	if i < 0 || i >= EItemUpdateStatus(len(_EItemUpdateStatus_index)-1) {
+		return "EItemUpdateStatus(" + strconv.FormatInt(int64(i), 10) + ")"
+	}
+	return _EItemUpdateStatus_name[_EItemUpdateStatus_index[i]:_EItemUpdateStatus_index[i+1]]
+}
+
+func _() {
+	// An "invalid array index" compiler error signifies that the constant values have changed.
+	// Re-run the stringer command to generate them again.
+	var x [1]struct{}
+	_ = x[EItemState_None-0]
+	_ = x[EItemState_Subscribed-1]
+	_ = x[EItemState_LegacyItem-2]
+	_ = x[EItemState_Installed-4]
+	_ = x[EItemState_NeedsUpdate-8]
+	_ = x[EItemState_Downloading-16]
+	_ = x[EItemState_DownloadPending-32]
+}
+
+const (
+	_EItemState_name_0 = "NoneSubscribedLegacyItem"
+	_EItemState_name_1 = "Installed"
+	_EItemState_name_2 = "NeedsUpdate"
+	_EItemState_name_3 = "Downloading"
+	_EItemState_name_4 = "DownloadPending"
+)
+
+var (
+	_EItemState_index_0 = [...]uint8{0, 4, 14, 24}
+)
+
+func (i EItemState) String() string {
+	switch {
+	case 0 <= i && i <= 2:
+		return _EItemState_name_0[_EItemState_index_0[i]:_EItemState_index_0[i+1]]
+	case i == 4:
+		return _EItemState_name_1
+	case i == 8:
+		return _EItemState_name_2
+	case i == 16:
+		return _EItemState_name_3
+	case i == 32:
+		return _EItemState_name_4
+	default:
+		return "EItemState(" + strconv.FormatInt(int64(i), 10) + ")"
+	}
+}
+
+func _() {
+	// An "invalid array index" compiler error signifies that the constant values have changed.
+	// Re-run the stringer command to generate them again.
+	var x [1]struct{}
+	_ = x[EItemStatistic_NumSubscriptions-0]
+	_ = x[EItemStatistic_NumFavorites-1]
+	_ = x[EItemStatistic_NumFollowers-2]
+	_ = x[EItemStatistic_NumUniqueSubscriptions-3]
+	_ = x[EItemStatistic_NumUniqueFavorites-4]
+	_ = x[EItemStatistic_NumUniqueFollowers-5]
+	_ = x[EItemStatistic_NumUniqueWebsiteViews-6]
+	_ = x[EItemStatistic_ReportScore-7]
+	_ = x[EItemStatistic_NumSecondsPlayed-8]
+	_ = x[EItemStatistic_NumPlaytimeSessions-9]
+	_ = x[EItemStatistic_NumComments-10]
+	_ = x[EItemStatistic_NumSecondsPlayedDuringTimePeriod-11]
+	_ = x[EItemStatistic_NumPlaytimeSessionsDuringTimePeriod-12]
+}
+
+const _EItemStatistic_name = "NumSubscriptionsNumFavoritesNumFollowersNumUniqueSubscriptionsNumUniqueFavoritesNumUniqueFollowersNumUniqueWebsiteViewsReportScoreNumSecondsPlayedNumPlaytimeSessionsNumCommentsNumSecondsPlayedDuringTimePeriodNumPlaytimeSessionsDuringTimePeriod"
+
+var _EItemStatistic_index = [...]uint8{0, 16, 28, 40, 62, 80, 98, 119, 130, 146, 165, 176, 208, 243}
+
+func (i EItemStatistic) String() string {
+	if i < 0 || i >= EItemStatistic(len(_EItemStatistic_index)-1) {
+		return "EItemStatistic(" + strconv.FormatInt(int64(i), 10) + ")"
+	}
+	return _EItemStatistic_name[_EItemStatistic_index[i]:_EItemStatistic_index[i+1]]
+}
+
+func _() {
+	// An "invalid array index" compiler error signifies that the constant values have changed.
+	// Re-run the stringer command to generate them again.
+	var x [1]struct{}
+	_ = x[EItemPreviewType_Image-0]
+	_ = x[EItemPreviewType_YouTubeVideo-1]
+	_ = x[EItemPreviewType_Sketchfab-2]
+	_ = x[EItemPreviewType_EnvironmentMap_HorizontalCross-3]
+	_ = x[EItemPreviewType_EnvironmentMap_LatLong-4]
+	_ = x[EItemPreviewType_ReservedMax-255]
+}
+
+const (
+	_EItemPreviewType_name_0 = "ImageYouTubeVideoSketchfabEnvironmentMap_HorizontalCrossEnvironmentMap_LatLong"
+	_EItemPreviewType_name_1 = "ReservedMax"
+)
+
+var (
+	_EItemPreviewType_index_0 = [...]uint8{0, 5, 17, 26, 56, 78}
+)
+
+func (i EItemPreviewType) String() string {
+	switch {
+	case 0 <= i && i <= 4:
+		return _EItemPreviewType_name_0[_EItemPreviewType_index_0[i]:_EItemPreviewType_index_0[i+1]]
+	case i == 255:
+		return _EItemPreviewType_name_1
+	default:
+		return "EItemPreviewType(" + strconv.FormatInt(int64(i), 10) + ")"
+	}
+}
+
+func _() {
+	// An "invalid array index" compiler error signifies that the constant values have changed.
+	// Re-run the stringer command to generate them again.
+	var x [1]struct{}
+	_ = x[EHTMLMouseButton_Left-0]
+	_ = x[EHTMLMouseButton_Right-1]
+	_ = x[EHTMLMouseButton_Middle-2]
+}
+
+const _EHTMLMouseButton_name = "LeftRightMiddle"
+
+var _EHTMLMouseButton_index = [...]uint8{0, 4, 9, 15}
+
+func (i EHTMLMouseButton) String() string {
+	if i < 0 || i >= EHTMLMouseButton(len(_EHTMLMouseButton_index)-1) {
+		return "EHTMLMouseButton(" + strconv.FormatInt(int64(i), 10) + ")"
+	}
+	return _EHTMLMouseButton_name[_EHTMLMouseButton_index[i]:_EHTMLMouseButton_index[i+1]]
+}
+
+func _() {
+	// An "invalid array index" compiler error signifies that the constant values have changed.
+	// Re-run the stringer command to generate them again.
+	var x [1]struct{}
+	_ = x[EMouseCursor_user-0]
+	_ = x[EMouseCursor_none-1]
+	_ = x[EMouseCursor_arrow-2]
+	_ = x[EMouseCursor_ibeam-3]
+	_ = x[EMouseCursor_hourglass-4]
+	_ = x[EMouseCursor_waitarrow-5]
+	_ = x[EMouseCursor_crosshair-6]
+	_ = x[EMouseCursor_up-7]
+	_ = x[EMouseCursor_sizenw-8]
+	_ = x[EMouseCursor_sizese-9]
+	_ = x[EMouseCursor_sizene-10]
+	_ = x[EMouseCursor_sizesw-11]
+	_ = x[EMouseCursor_sizew-12]
+	_ = x[EMouseCursor_sizee-13]
+	_ = x[EMouseCursor_sizen-14]
+	_ = x[EMouseCursor_sizes-15]
+	_ = x[EMouseCursor_sizewe-16]
+	_ = x[EMouseCursor_sizens-17]
+	_ = x[EMouseCursor_sizeall-18]
+	_ = x[EMouseCursor_no-19]
+	_ = x[EMouseCursor_hand-20]
+	_ = x[EMouseCursor_blank-21]
+	_ = x[EMouseCursor_middle_pan-22]
+	_ = x[EMouseCursor_north_pan-23]
+	_ = x[EMouseCursor_north_east_pan-24]
+	_ = x[EMouseCursor_ast_pan-25]
+	_ = x[EMouseCursor_south_east_pan-26]
+	_ = x[EMouseCursor_south_pan-27]
+	_ = x[EMouseCursor_south_west_pan-28]
+	_ = x[EMouseCursor_west_pan-29]
+	_ = x[EMouseCursor_north_west_pan-30]
+	_ = x[EMouseCursor_alias-31]
+	_ = x[EMouseCursor_cell-32]
+	_ = x[EMouseCursor_colresize-33]
+	_ = x[EMouseCursor_copycur-34]
+	_ = x[EMouseCursor_verticaltext-35]
+	_ = x[EMouseCursor_rowresize-36]
+	_ = x[EMouseCursor_zoomin-37]
+	_ = x[EMouseCursor_zoomout-38]
+	_ = x[EMouseCursor_help-39]
+	_ = x[EMouseCursor_custom-40]
+	_ = x[EMouseCursor_last-41]
+}
+
+const _EMouseCursor_name = "usernonearrowibeamhourglasswaitarrowcrosshairupsizenwsizesesizenesizeswsizewsizeesizensizessizewesizenssizeallnohandblankmiddle_pannorth_pannorth_east_panast_pansouth_east_pansouth_pansouth_west_panwest_pannorth_west_panaliascellcolresizecopycurverticaltextrowresizezoominzoomouthelpcustomlast"
+
+var _EMouseCursor_index = [...]uint16{0, 4, 8, 13, 18, 27, 36, 45, 47, 53, 59, 65, 71, 76, 81, 86, 91, 97, 103, 110, 112, 116, 121, 131, 140, 154, 161, 175, 184, 198, 206, 220, 225, 229, 238, 245, 257, 266, 272, 279, 283, 289, 293}
+
+func (i EMouseCursor) String() string {
+	if i < 0 || i >= EMouseCursor(len(_EMouseCursor_index)-1) {
+		return "EMouseCursor(" + strconv.FormatInt(int64(i), 10) + ")"
+	}
+	return _EMouseCursor_name[_EMouseCursor_index[i]:_EMouseCursor_index[i+1]]
+}
+
+func _() {
+	// An "invalid array index" compiler error signifies that the constant values have changed.
+	// Re-run the stringer command to generate them again.
+	var x [1]struct{}
+	_ = x[EHTMLKeyModifiers_HTMLKeyModifier_None-0]
+	_ = x[EHTMLKeyModifiers_HTMLKeyModifier_AltDown-1]
+	_ = x[EHTMLKeyModifiers_HTMLKeyModifier_CtrlDown-2]
+	_ = x[EHTMLKeyModifiers_HTMLKeyModifier_ShiftDown-4]
+}
+
+const (
+	_EHTMLKeyModifiers_name_0 = "HTMLKeyModifier_NoneHTMLKeyModifier_AltDownHTMLKeyModifier_CtrlDown"
+	_EHTMLKeyModifiers_name_1 = "HTMLKeyModifier_ShiftDown"
+)
+
+var (
+	_EHTMLKeyModifiers_index_0 = [...]uint8{0, 20, 43, 67}
+)
+
+func (i EHTMLKeyModifiers) String() string {
+	switch {
+	case 0 <= i && i <= 2:
+		return _EHTMLKeyModifiers_name_0[_EHTMLKeyModifiers_index_0[i]:_EHTMLKeyModifiers_index_0[i+1]]
+	case i == 4:
+		return _EHTMLKeyModifiers_name_1
+	default:
+		return "EHTMLKeyModifiers(" + strconv.FormatInt(int64(i), 10) + ")"
+	}
+}
+
+func _() {
+	// An "invalid array index" compiler error signifies that the constant values have changed.
+	// Re-run the stringer command to generate them again.
+	var x [1]struct{}
+	_ = x[ESteamItemFlags_ESteamItemNoTrade-1]
+	_ = x[ESteamItemFlags_ESteamItemRemoved-256]
+	_ = x[ESteamItemFlags_ESteamItemConsumed-512]
+}
+
+const (
+	_ESteamItemFlags_name_0 = "ESteamItemNoTrade"
+	_ESteamItemFlags_name_1 = "ESteamItemRemoved"
+	_ESteamItemFlags_name_2 = "ESteamItemConsumed"
+)
+
+func (i ESteamItemFlags) String() string {
+	switch {
+	case i == 1:
+		return _ESteamItemFlags_name_0
+	case i == 256:
+		return _ESteamItemFlags_name_1
+	case i == 512:
+		return _ESteamItemFlags_name_2
+	default:
+		return "ESteamItemFlags(" + strconv.FormatInt(int64(i), 10) + ")"
+	}
+}
+
+func _() {
+	// An "invalid array index" compiler error signifies that the constant values have changed.
+	// Re-run the stringer command to generate them again.
+	var x [1]struct{}
+	_ = x[EParentalFeature_Invalid-0]
+	_ = x[EParentalFeature_Store-1]
+	_ = x[EParentalFeature_Community-2]
+	_ = x[EParentalFeature_Profile-3]
+	_ = x[EParentalFeature_Friends-4]
+	_ = x[EParentalFeature_News-5]
+	_ = x[EParentalFeature_Trading-6]
+	_ = x[EParentalFeature_Settings-7]
+	_ = x[EParentalFeature_Console-8]
+	_ = x[EParentalFeature_Browser-9]
+	_ = x[EParentalFeature_ParentalSetup-10]
+	_ = x[EParentalFeature_Library-11]
+	_ = x[EParentalFeature_Test-12]
+	_ = x[EParentalFeature_Max-13]
+}
+
+const _EParentalFeature_name = "InvalidStoreCommunityProfileFriendsNewsTradingSettingsConsoleBrowserParentalSetupLibraryTestMax"
+
+var _EParentalFeature_index = [...]uint8{0, 7, 12, 21, 28, 35, 39, 46, 54, 61, 68, 81, 88, 92, 95}
+
+func (i EParentalFeature) String() string {
+	if i < 0 || i >= EParentalFeature(len(_EParentalFeature_index)-1) {
+		return "EParentalFeature(" + strconv.FormatInt(int64(i), 10) + ")"
+	}
+	return _EParentalFeature_name[_EParentalFeature_index[i]:_EParentalFeature_index[i+1]]
+}
+
+func _() {
+	// An "invalid array index" compiler error signifies that the constant values have changed.
+	// Re-run the stringer command to generate them again.
+	var x [1]struct{}
+	_ = x[EServerMode_Invalid-0]
+	_ = x[EServerMode_NoAuthentication-1]
+	_ = x[EServerMode_Authentication-2]
+	_ = x[EServerMode_AuthenticationAndSecure-3]
+}
+
+const _EServerMode_name = "InvalidNoAuthenticationAuthenticationAuthenticationAndSecure"
+
+var _EServerMode_index = [...]uint8{0, 7, 23, 37, 60}
+
+func (i EServerMode) String() string {
+	if i < 0 || i >= EServerMode(len(_EServerMode_index)-1) {
+		return "EServerMode(" + strconv.FormatInt(int64(i), 10) + ")"
+	}
+	return _EServerMode_name[_EServerMode_index[i]:_EServerMode_index[i+1]]
+}
