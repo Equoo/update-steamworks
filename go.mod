@@ -1,6 +1,6 @@
 module github.com/Equoo/update-steamworks
 
-go 1.21.4
+go 1.13
 
 require (
 	golang.org/x/mod v0.14.0 // indirect
